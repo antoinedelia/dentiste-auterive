@@ -1,0 +1,4 @@
+User-Agent: *
+Disallow: 
+
+Sitemap: https://www.dr-delia-christophe.chirurgiens-dentistes.fr/sitemap.xml
