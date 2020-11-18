@@ -40,7 +40,7 @@
           </nav>
         </div>
         <div class="col-md-5">
-          <img class="featurette-image img-responsive3" src="img/delia.jpg" alt="Christophe Delia">
+          <img class="featurette-image img-responsive" src="img/delia.jpg" alt="Christophe Delia">
         </div>
       </div>
 
@@ -50,7 +50,7 @@
 
       <div id="dentistes" class="row featurette">
         <div class="col-md-5">
-          <img class="featurette-image img-responsive3" src="img/sperte.jpg" alt="Marion Sperte">
+          <img class="featurette-image img-responsive" src="img/sperte.jpg" alt="Marion Sperte">
         </div>
         <div class="col-md-7">
           <h2 class="featurette-heading">Marion Sperte</h2>
@@ -79,7 +79,7 @@
           </nav>
         </div>
         <div class="col-md-5">
-          <img class="featurette-image img-responsive3" src="img/aragon.jpg" alt="Paul Aragon">
+          <img class="featurette-image img-responsive" src="img/aragon.jpg" alt="Paul Aragon">
         </div>
       </div>
 
@@ -110,7 +110,7 @@
 
       <div class="row featurette">
         <div class="col-md-5">
-          <img class="featurette-image img-responsive3" src="img/joelle.jpg" alt="Joëlle">
+          <img class="featurette-image img-responsive" src="img/joelle.jpg" alt="Joëlle">
         </div>
         <div class="col-md-7">
           <h2 class="featurette-heading">Joëlle</h2>
@@ -141,7 +141,7 @@
           </nav>
         </div>
         <div class="col-md-5">
-          <img class="featurette-image img-responsive3" src="img/megane.jpg" alt="Mégane">
+          <img class="featurette-image img-responsive" src="img/megane.jpg" alt="Mégane">
         </div>
       </div>
 
@@ -151,7 +151,7 @@
 
       <div class="row featurette">
         <div class="col-md-5">
-          <img class="featurette-image img-responsive3" src="img/laura.jpg" alt="Laura">
+          <img class="featurette-image img-responsive" src="img/laura.jpg" alt="Laura">
         </div>
         <div class="col-md-7">
           <h2 class="featurette-heading">Laura</h2>

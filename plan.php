@@ -54,7 +54,7 @@
           <p class="lead"><a href="mailto:sperte.delia@orange.fr">Envoyez un mail</a></p>
         </div>
         <div class="col-md-5">
-          <img class="featurette-image img-responsive2" src="img/enveloppe.png" alt="contact">
+          <img class="featurette-image img-responsive" src="img/enveloppe.png" alt="contact">
         </div>
       </div>
 

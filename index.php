@@ -29,7 +29,7 @@
         </div>
         <div class="col-md-5">
           <a onclick="ga('send', 'event', 'link', 'click', 'questionnaire', 1);" href="files/Questionnaire%20dentaire.pdf" rel="noopener noreferrer" target="_blank">
-            <img class="featurette-image img-responsive4" src="img/formulaire.png" alt="Questionnaire médical">
+            <img class="featurette-image img-responsive" src="img/formulaire.png" alt="Questionnaire médical">
           </a>
         </div>
       </div>
@@ -76,7 +76,7 @@
             <br>Il est passé progressivement d'un chirurgien dentiste et d'une salle de soins, à <strong>trois chirurgiens dentistes</strong> pour deux salles de soins et <strong>trois assistantes dentaires</strong>.</p>
         </div>
         <div class="col-md-5">
-          <img class="featurette-image img-responsive4" src="img/plaque.jpg" alt="Le cabinet dentaire">
+          <img class="featurette-image img-responsive" src="img/plaque.jpg" alt="Le cabinet dentaire">
         </div>
       </div>
 
@@ -84,7 +84,7 @@
 
       <div class="row featurette">
         <div class="col-md-5">
-          <img class="featurette-image img-responsive4" src="img/salle_attente.jpg" alt="Salle d'attente">
+          <img class="featurette-image img-responsive" src="img/salle_attente.jpg" alt="Salle d'attente">
         </div>
         <div class="col-md-7">
           <h3 class="featurette-heading">Salle d'attente</h3>
@@ -100,7 +100,7 @@
           <p class="lead">Un parking goudronné vous permettra de vous garer facilement. L'absence de marche permet un accès facilité aux brancards et personnes handicapés.</p>
         </div>
         <div class="col-md-5">
-          <img class="featurette-image img-responsive4" src="img/parking.jpg" alt="Parking">
+          <img class="featurette-image img-responsive" src="img/parking.jpg" alt="Parking">
         </div>
       </div>
 

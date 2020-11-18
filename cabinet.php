@@ -31,7 +31,7 @@
          </p>
         </div>
         <div class="col-md-5">
-          <img class="featurette-image img-responsive1" src="img/presentation_dentistes.jpg" alt="cabinet dentaire">
+          <img class="featurette-image img-responsive" src="img/presentation_dentistes.jpg" alt="cabinet dentaire">
         </div>
       </div>
 
@@ -39,10 +39,10 @@
 
       <div class="row featurette">
         <div class="col-md-5">
-          <img class="featurette-image img-responsive1" src="img/cabinet2.jpeg" alt="equipements">
+          <img class="featurette-image img-responsive" src="img/cabinet2.jpeg" alt="equipements">
         </div>
         <!-- <div class="col-md-3">
-          <img class="featurette-image img-responsive1" src="img/cabinet3.jpg" alt="equipements">
+          <img class="featurette-image img-responsive" src="img/cabinet3.jpg" alt="equipements">
         </div> -->
         <div class="col-md-7">
           <h2 class="featurette-heading">Équipements</h2>
@@ -83,7 +83,7 @@
           </nav>
         </div>
         <div class="col-md-5">
-          <img class="featurette-image img-responsive1" src="img/traitement.jpg" alt="equipements">
+          <img class="featurette-image img-responsive" src="img/traitement.jpg" alt="equipements">
         </div>
       </div>
 
@@ -91,7 +91,7 @@
 
       <div class="row featurette">
         <div class="col-md-5">
-          <img class="featurette-image img-responsive1" src="img/cabinet1.jpg" alt="Informations complémentaires">
+          <img class="featurette-image img-responsive" src="img/cabinet1.jpg" alt="Informations complémentaires">
         </div>
         <div class="col-md-7">
           <h2 class="featurette-heading">Informations complémentaires</h2>
