@@ -20,19 +20,6 @@
 
 <?php $actual_link = "https://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"; ?>
 
-<!-- <?php if ($actual_link != "https://dr-delia-christophe.chirurgiens-dentistes.fr/regles.php") { ?>
-<div class="jumbotron">
-  <p>
-    Le cabinet des Docteurs DELIA, SPERTE et ARAGON reste ouvert pendant la période de confinement en appliquant les protocoles de sécurité permettant de soigner dans les meilleures conditions d'hygiènes et d'asepsies recommandées par la Haute Autorité de la Santé.
-<br>  
-Les nouvelles restrictions sanitaires ne limitent pas la prise de rendez-vous pour une consultation physique et tous vos rendez-vous sont donc maintenus.
-<br>
-L’équipe soignante.
-  </p>
-</div>
-
-<?php } ?> -->
-
 <div class="navbar-wrapper">
   <div class="container">
     <div class="navbar navbar-inverse navbar-static-top" role="navigation">

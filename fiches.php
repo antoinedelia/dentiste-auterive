@@ -1139,11 +1139,6 @@
       <?php include_once ("footer.html"); ?>      
 
     </div><!-- /.container -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="bootstrap/docs/assets/js/docs.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="bootstrap/docs/assets/js/ie10-viewport-bug-workaround.js"></script>
     <script type="text/javascript">
       function show(num, id){
         if (document.getElementById(num).style.display == "block") {
