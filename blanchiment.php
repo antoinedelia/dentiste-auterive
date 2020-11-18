@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <?php include_once ("header.html"); ?>
+    <title>Blanchiment - Dentiste Auterive 31190 Cabinet dentaire des Drs DELIA, SPERTE et ARAGON</title>
+  </head>
+
+  <body>
+    <!-- NAVBAR ================================================== -->
+    <?php include_once ("navbar.php"); ?>
+    <!-- Carousel ================================================== -->
+    <?php include_once ("carousel.html"); ?>
+    <!-- /.carousel -->
+
+
+
+    <!-- Marketing messaging and featurettes ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+
+      <!-- START THE FEATURETTES -->
+
+      <div class="row featurette">
+        <div class="col-md">
+          <h2 class="featurette-heading">Blanchiment</h2>
+          <p class="text">
+            Véritable promesse de séduction et de santé, avoir un joli sourire passe
+            inévitablement par une dentition blanche et bien alignée. Or, différents
+            facteurs à caractère héréditaire (coloration naturelle ou vieillissement
+            de la dent), pathologique (prise de tétracycline pendant la période de
+            formation de la dent) ou encore provenant du mode de vie (consommation
+            de café, thé, tabac...) rendent parfois les dents jaunes ou colorées.
+          </p>
+
+          <hr class="featurette-divider">
+
+          <h2 class="featurette-heading">Le blanchiment dentaire, c'est quoi ?</h2>
+          <p class="text">
+            Ce procédé simple de dentisterie esthétique sert à éclaircir les
+            colorations de l'émail et de la dentine grâce à l'utilisation d'un gel à
+            base de peroxyde d'hydrogène (eau oxygénée). Que ce soit en cabinet ou
+            à domicile, aucun traitement blanchissant ne doit être effectué sans
+            avoir préalablement effectué un bilan bucco-dentaire approfondi par un
+            chirurgien-dentiste afin de vérifier l'absence de contre-indications (
+            caries non soignées, dents dévitalisées, faiblesse de l'émail, 
+            irritations gingivales...) ainsi qu'un détartrage efficace.<br/>
+            Ce type de traitement n'est conseillé que lorsque les dents sont
+            fortement jaunies. <b>L'important reste de préserver au maximum la teinte
+            naturelle de la dent afin qu'elle soit en adéquation avec l'ensemble du
+            visage.</b>
+          </p>
+          
+          <hr class="featurette-divider">
+
+          <h2 class="featurette-heading">Le blanchiment "ambulatoire"</h2>
+          <p class="text">
+            Il est d'abord mis en oeuvre au cabinet avec la confection de gouttières
+            et poursuivi au domicile à l'aide d'un gel de peroxyde d'hydrogène
+            fortement dosé. Le port des gouttières s'effectue de préférence la nuit
+            et sa durée peut atteindre une dizaine de jours selon la prescription du
+            dentiste.<br/>
+            Il est également possible, dans des cas extrêmes, d'effectuer une séance
+            de blanchiment au fauteuil suivi d'un traitement ambulatoire classique.
+          </p>
+
+          <hr class="featurette-divider">
+
+          <h2 class="featurette-heading">Au bout de combien de temps voit-on les résultats ?</h2>
+          <p class="text">
+            En principe, les résultats apparaissent véritablement au bout de 15
+            jours et sont visibles en moyenne 4 ans, en fonction du mode de vie du
+            patient (consommation élevée de café, tabac, thé ou non). En cas de
+            sensibilité, il est impératif d'arrêter le traitement et de consulter un
+            dentiste pour éviter d'endommager le nerf de la dent.<br/>
+            Bien sur il existe des contre-indications que votre dentiste sera à
+            même de repérer. La gingivite et la parodontite sont les plus fréquentes.
+          </p>
+
+          <hr class="featurette-divider">
+
+          <h2 class="featurette-heading">Quelques astuces pour des dents plus blanches</h2>
+          <p class="text">
+            En plus d'une bonne hygiène dentaire quotidienne, voici quelques
+            conseils pour avoir un sourire lumineux :
+
+            <nav>
+              <ul class="text">
+                <li>Pratiquez tous les six mois un détartrage des dents</li>
+                <li>Faites régulièrement vérifier le bon état des gencives (visite annuelle chez le dentiste)</li>
+                <li>Avalez un grand verre d'eau pour vous rincer la bouche après avoir bu café ou thé</li>
+                <li>Arrêtez de fumer ou réduisez autant que vous le pouvez votre consommation de cigarettes</li>
+                <li>Évitez si vous le pouvez ou limitez la consommations des aliments ou boissons qui colorent les dents : thé, café, réglisse...</li>
+              </ul>
+            </nav>
+          </p>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+
+
+      <!-- FOOTER -->
+      <?php include_once ("footer.html"); ?>
+
+    </div><!-- /.container -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bootstrap/docs/assets/js/docs.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="bootstrap/docs/assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

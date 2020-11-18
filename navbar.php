@@ -63,7 +63,7 @@ L’équipe soignante.
                 <ul class="dropdown-menu">
                   <li><a href="implants.php">Implants</a></li>
                   <li><a href="gouttieres.php">Smiler's l'orthodontie invisible</a></li>
-                  <li><a href="#">Blanchiment dentaire</a></li>
+                  <li><a href="blanchiment.php">Blanchiment dentaire</a></li>
                 </ul>
               </li>
               <li <?php if ($actual_link == "https://dr-delia-christophe.chirurgiens-dentistes.fr/qualite.php" || $actual_link == "https://dr-delia-christophe.chirurgiens-dentistes.fr/fiches.php" || $actual_link == "https://dr-delia-christophe.chirurgiens-dentistes.fr/conebeam.php") { ?>class="active" <?php } ?> class="dropdown">
