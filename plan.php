@@ -27,7 +27,7 @@
   					<em>Lundi :</em> De <strong>9h à 12h</strong> et de <strong>14h à 19h</strong><br />
             <em>Mardi :</em> De <strong>9h à 12h</strong> et de <strong>14h30 à 19h30</strong><br />
             <em>Mercredi :</em> De <strong>9h à 12h</strong> et de <strong>14h30 à 19h30</strong><br />
-            <em>Jeudi :</em> De <strong>14h30 à 19h</strong><br />
+            <em>Jeudi :</em> De <strong>9h à 12h</strong> et de <strong>14h à 19h</strong><br />
             <em>Vendredi :</em> De <strong>9h à 12h</strong> et de <strong>14h à 17h</strong><br />
   				</p>
 		    </div>
