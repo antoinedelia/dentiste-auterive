@@ -34,6 +34,9 @@
             de café, thé, tabac...) rendent parfois les dents jaunes ou colorées.
           </p>
 
+          <br />
+          <img class="img-responsive center-block" src="img/blanchiment-3.jpg" alt="Blanchiment"/>
+
           <hr class="featurette-divider">
 
           <h2 class="featurette-heading">Le blanchiment dentaire, c'est quoi ?</h2>
@@ -51,6 +54,9 @@
             naturelle de la dent afin qu'elle soit en adéquation avec l'ensemble du
             visage.</b>
           </p>
+
+          <br />
+          <img class="img-responsive center-block" src="img/blanchiment-2.jpg" alt="Blanchiment"/>
           
           <hr class="featurette-divider">
 
@@ -77,6 +83,9 @@
             Bien sur il existe des contre-indications que votre dentiste sera à
             même de repérer. La gingivite et la parodontite sont les plus fréquentes.
           </p>
+
+          <br />
+          <img class="img-responsive center-block" src="img/blanchiment-1.jpg" alt="Blanchiment avant après"/>
 
           <hr class="featurette-divider">
 
