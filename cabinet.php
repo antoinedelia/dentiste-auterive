@@ -101,6 +101,8 @@
             Nous ne pratiquons pas le tiers payant.
             <br>
             L'accès aux personnes handicapées est facilité.
+            <br>
+            Nous appliquons le 100% santé pour les soins et les prothèses comme les couronnes céramiques jusqu'aux deuxièmes prémolaires, métalliques sur les molaires et pour les appareils amovibles en résine, quelque soit le nombre de dents à remplacer.
           </p>
         </div>
       </div>
