@@ -78,7 +78,7 @@
               <li>Gouttières d'alignement invisibles</li>
               <li>Traitement des parodontopathies par lithotripsie et curetage sous gingival.</li>
               <li>Technique de stabilisation des prothèses complétée par les attachements supra implantaires et le système Locator&trade;</li>
-              <li>Prothèse fixe et amovible (couronnes, tout céramique, céramo-métallique, métalliques, facettes, onlays, stellites, prothèses partielles adjointes résine, prothèses complètes) de fabrication française par deux laboratoires de prothèse dentaire à Miremont et Toulouse.</li>
+              <li>Prothèse fixe et amovible (couronnes, tout céramique, céramo-métallique, métalliques, facettes, onlays, stellites, prothèses partielles adjointes résine, prothèses complètes) de fabrication française par trois laboratoires de prothèse dentaire à Miremont, Toulouse et Paris.</li>
             </ul>
           </nav>
         </div>
