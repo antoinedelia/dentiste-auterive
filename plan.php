@@ -24,11 +24,11 @@
   				<h2 class="featurette-heading" id="horaires">Horaires d'ouverture</h2>
   				<img class="left clock" src="img/heure.png" alt="Horaires d'ouverture du cabinet" />
   				<p class="contact">
-  					<em>Lundi :</em> De <strong>9h à 12h</strong> et de <strong>14h à 19h</strong><br />
-            <em>Mardi :</em> De <strong>9h à 12h</strong> et de <strong>14h30 à 19h30</strong><br />
-            <em>Mercredi :</em> De <strong>9h à 12h</strong> et de <strong>14h30 à 19h30</strong><br />
-            <em>Jeudi :</em> De <strong>9h à 12h</strong> et de <strong>14h à 19h</strong><br />
-            <em>Vendredi :</em> De <strong>9h à 12h</strong> et de <strong>14h à 17h</strong><br />
+  					<em>Lundi :</em> De <strong>9h à 12h</strong> et de <strong>14h à 18h30</strong><br />
+            <em>Mardi :</em> De <strong>9h à 12h</strong> et de <strong>14h30 à 18h30</strong><br />
+            <em>Mercredi :</em> De <strong>9h à 12h</strong> et de <strong>14h30 à 18h30</strong><br />
+            <em>Jeudi :</em> De <strong>9h à 12h</strong> et de <strong>14h à 18h30</strong><br />
+            <em>Vendredi :</em> De <strong>9h à 12h</strong> et de <strong>14h à 18h30</strong><br />
   				</p>
 		    </div>
       </div>
