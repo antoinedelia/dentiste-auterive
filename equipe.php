@@ -108,7 +108,7 @@
 
       <!-- Joëlle -->
 
-      <div class="row featurette">
+      <!-- <div class="row featurette">
         <div class="col-md-5">
           <img class="featurette-image img-responsive" src="img/joelle.jpg" alt="Joëlle">
         </div>
@@ -125,11 +125,14 @@
         </div>
       </div>
 
-      <hr class="featurette-divider">
+      <hr class="featurette-divider"> -->
 
       <!-- Mégane -->
 
       <div class="row featurette">
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="img/megane.jpg" alt="Mégane">
+        </div>
         <div class="col-md-7">
           <h2 class="featurette-heading">Mégane</h2>
           <nav>
@@ -140,9 +143,6 @@
             </ul>
           </nav>
         </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive" src="img/megane.jpg" alt="Mégane">
-        </div>
       </div>
 
       <hr class="featurette-divider">
@@ -150,15 +150,33 @@
       <!-- Laura -->
 
       <div class="row featurette">
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive" src="img/laura.jpg" alt="Laura">
-        </div>
         <div class="col-md-7">
           <h2 class="featurette-heading">Laura</h2>
           <nav>
             <ul class="text">
               <li>Assistante dentaire qualifiée depuis 2016</li>
               <li>Diplomée de l'ESAD Toulouse</li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="img/laura.jpg" alt="Laura">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <!-- Élodie -->
+
+      <div class="row featurette">
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="img/elodie.jpg" alt="Élodie">
+        </div>
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Élodie</h2>
+          <nav>
+            <ul class="text">
+              <li>Assistante dentaire en formation</li>
             </ul>
           </nav>
         </div>
