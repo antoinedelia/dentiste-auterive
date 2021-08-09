@@ -88,7 +88,7 @@
         </div>
         <div class="col-md-7">
           <h3 class="featurette-heading">Salle d'attente</h3>
-          <p class="lead">Le cabinet dispose d'une salle d'attente agréable, de lectures récentes, et l'équipe fera le maximum pour respecter vos horaires de rendez-vous afin d'éviter une attente trop longue.</p>
+          <p class="lead">Le cabinet dispose d'une salle d'attente agréable, et l'équipe fera le maximum pour respecter vos horaires de rendez-vous afin d'éviter une attente trop longue.</p>
         </div>
       </div>
 
