@@ -24,4 +24,4 @@ Les nouvelles restrictions sanitaires ne limitent pas la prise de rendez-vous po
 <br>
 L’équipe soignante.
 `
-toastr.info(text, 'COVID-19')
+// toastr.info(text, 'COVID-19')
