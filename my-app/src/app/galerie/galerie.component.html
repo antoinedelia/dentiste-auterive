@@ -1,1 +1,11 @@
-<p>galerie works!</p>
+<ngb-carousel>
+    <ng-template ngbSlide *ngFor="let photo of photos">
+        <div>
+            <img class="img-responsive" [src]="photo.src"
+                 [alt]="photo.alt">
+        </div>
+        <div class="carousel-caption">
+            <h3>{{ photo.title }}</h3>
+        </div>
+    </ng-template>
+</ngb-carousel>
