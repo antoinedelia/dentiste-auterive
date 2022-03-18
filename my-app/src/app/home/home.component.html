@@ -1,82 +1,133 @@
-
-<div fxLayout="row wrap" fxLayoutAlign="center center">
+<div fxLayout="row wrap"
+     fxLayoutAlign="center center">
     <div>
         <h3 class="featurette-heading">Questionnaire médical</h3>
         <p class="lead">Cher patient,
-        <br/>Afin d'écourter votre temps d'attente au cabinet, nous vous proposons de <strong>télécharger, imprimer puis de remplir le questionnaire médical</strong> à remettre à votre praticien lors de votre rendez-vous.
-        <br/>Vous pouvez <a onclick="ga('send', 'event', 'link', 'click', 'questionnaire', 0);" href="assets/files/Questionnaire%20dentaire.pdf" rel="noopener noreferrer" target="_blank">télécharger le questionnaire en cliquant ici</a> ou sur l'image ci-contre.
+            <br />Afin d'écourter votre temps d'attente au cabinet, nous vous proposons de <strong>télécharger, imprimer
+                puis de remplir le questionnaire médical</strong> à remettre à votre praticien lors de votre
+            rendez-vous.
+            <br />Vous pouvez <a onclick="ga('send', 'event', 'link', 'click', 'questionnaire', 0);"
+               href="assets/files/Questionnaire%20dentaire.pdf"
+               rel="noopener noreferrer"
+               target="_blank">télécharger le questionnaire en cliquant ici</a> ou sur l'image ci-contre.
         </p>
     </div>
     <div>
-        <a onclick="ga('send', 'event', 'link', 'click', 'questionnaire', 1);" href="assets/files/Questionnaire%20dentaire.pdf" rel="noopener noreferrer" target="_blank">
-        <img class="featurette-image img-responsive" src="assets/img/formulaire.png" alt="Questionnaire médical">
+        <a onclick="ga('send', 'event', 'link', 'click', 'questionnaire', 1);"
+           href="assets/files/Questionnaire%20dentaire.pdf"
+           rel="noopener noreferrer"
+           target="_blank">
+            <img class="featurette-image img-responsive"
+                 src="assets/img/formulaire.png"
+                 alt="Questionnaire médical">
         </a>
     </div>
 </div>
 
 <hr class="featurette-divider">
 
-<div class="d-flex" fxLayout="row wrap" fxLayoutAlign="center center">
-    <div class="d-flex" fxLayout="column wrap" fxLayoutAlign="center center">
-        <a href="cabinet.php#soins">
-        <img class="img-circle" src="assets/img/dent.png" alt="dent" style="width: 140px; height: 140px;">
+<div class="d-flex"
+     fxLayout="row wrap"
+     fxLayoutAlign="center center">
+    <div class="d-flex"
+         fxLayout="column wrap"
+         fxLayoutAlign="center center">
+        <a routerLink="about">
+            <img class="img-circle"
+                 src="assets/img/dent.png"
+                 alt="dent"
+                 style="width: 140px; height: 140px;">
         </a>
         <h2>Soins</h2>
         <p>Les soins proposés par le cabinet des docteurs DELIA, SPERTE et ARAGON</p>
-        <button mat-button color="primary" routerLink="/cabinet#soins">Soins &raquo;</button>
+        <button mat-button
+                color="primary"
+                routerLink="/cabinet#soins">Soins &raquo;</button>
     </div>
-    <div class="d-flex" fxLayout="column wrap" fxLayoutAlign="center center">
-        <a href="equipe.php#dentistes">
-        <img class="img-circle" src="assets/img/dentiste.png" alt="dentiste" style="width: 140px; height: 140px;">
+    <div class="d-flex"
+         fxLayout="column wrap"
+         fxLayoutAlign="center center">
+        <a routerLink="equipe">
+            <img class="img-circle"
+                 src="assets/img/dentiste.png"
+                 alt="dentiste"
+                 style="width: 140px; height: 140px;">
         </a>
         <h2>Dentistes</h2>
         <p>Les dentistes du cabinet d'Auterive.</p>
-        <button mat-button color="primary" routerLink="/equipe.php#dentistes">Dentistes &raquo;</button>
+        <button mat-button
+                color="primary"
+                routerLink="/equipe.php#dentistes">Dentistes &raquo;</button>
     </div>
-    <div class="d-flex" fxLayout="column wrap" fxLayoutAlign="center center">
-        <a href="plan.php#horaires">
-        <img class="img-circle" src="assets/img/maps.png" alt="location" style="width: 140px; height: 140px;">
+    <div class="d-flex"
+         fxLayout="column wrap"
+         fxLayoutAlign="center center">
+        <a routerLink="plan">
+            <img class="img-circle"
+                 src="assets/img/maps.png"
+                 alt="location"
+                 style="width: 140px; height: 140px;">
         </a>
         <h2>Accès et Horaires</h2>
-        <p>L'accès au cabinet dentaire d'Auterive<br/> ainsi que les horaires se trouvent ici</p>
-        <button mat-button color="primary" routerLink="/plan.php#horaires">Accès et Horaires &raquo;</button>
+        <p>L'accès au cabinet dentaire d'Auterive<br /> ainsi que les horaires se trouvent ici</p>
+        <button mat-button
+                color="primary"
+                routerLink="/plan.php#horaires">Accès et Horaires &raquo;</button>
     </div>
 </div>
 
 <hr class="featurette-divider">
 
-<div class="d-flex" fxLayout="row wrap" fxLayoutAlign="center center">
+<div class="d-flex"
+     fxLayout="row wrap"
+     fxLayoutAlign="center center">
     <div class="col-md-7">
         <h3 class="featurette-heading">Histoire du cabinet</h3>
-        <p class="lead">Anciennement centre médical regroupant des médecins généralistes, le cabinet dentaire d'Auterive a vu le jour en Septembre 2000 après quelques mois de travaux de réaménagement.
-        <br>Il est passé progressivement d'un chirurgien dentiste et d'une salle de soins, à <strong>trois chirurgiens dentistes</strong> pour deux salles de soins et <strong>trois assistantes dentaires</strong>.</p>
+        <p class="lead">Anciennement centre médical regroupant des médecins généralistes, le cabinet dentaire d'Auterive
+            a vu le jour en Septembre 2000 après quelques mois de travaux de réaménagement.
+            <br>Il est passé progressivement d'un chirurgien dentiste et d'une salle de soins, à <strong>trois
+                chirurgiens dentistes</strong> pour deux salles de soins et <strong>trois assistantes
+                dentaires</strong>.
+        </p>
     </div>
     <div class="col-md-5">
-        <img class="featurette-image img-responsive" src="assets/img/plaque.jpg" alt="Le cabinet dentaire">
+        <img class="featurette-image img-responsive"
+             src="assets/img/plaque.jpg"
+             alt="Le cabinet dentaire">
     </div>
 </div>
 
 <hr class="featurette-divider">
 
-<div class="d-flex" fxLayout="row wrap" fxLayoutAlign="center center">
+<div class="d-flex"
+     fxLayout="row wrap"
+     fxLayoutAlign="center center">
     <div class="col-md-5">
-        <img class="featurette-image img-responsive" src="assets/img/salle_attente.jpg" alt="Salle d'attente">
+        <img class="featurette-image img-responsive"
+             src="assets/img/salle_attente.jpg"
+             alt="Salle d'attente">
     </div>
     <div class="col-md-7">
         <h3 class="featurette-heading">Salle d'attente</h3>
-        <p class="lead">Le cabinet dispose d'une salle d'attente agréable, et l'équipe fera le maximum pour respecter vos horaires de rendez-vous afin d'éviter une attente trop longue.</p>
+        <p class="lead">Le cabinet dispose d'une salle d'attente agréable, et l'équipe fera le maximum pour respecter
+            vos horaires de rendez-vous afin d'éviter une attente trop longue.</p>
     </div>
 </div>
 
 <hr class="featurette-divider">
 
-<div class="d-flex" fxLayout="row wrap" fxLayoutAlign="center center">
+<div class="d-flex"
+     fxLayout="row wrap"
+     fxLayoutAlign="center center">
     <div class="col-md-7">
         <h3 class="featurette-heading">Parking</h3>
-        <p class="lead">Un parking goudronné vous permettra de vous garer facilement. L'absence de marche permet un accès facilité aux brancards et personnes handicapés.</p>
+        <p class="lead">Un parking goudronné vous permettra de vous garer facilement. L'absence de marche permet un
+            accès facilité aux brancards et personnes handicapés.</p>
     </div>
     <div class="col-md-5">
-        <img class="featurette-image img-responsive" src="assets/img/parking.jpg" alt="Parking">
+        <img class="featurette-image img-responsive"
+             src="assets/img/parking.jpg"
+             alt="Parking">
     </div>
 </div>
 

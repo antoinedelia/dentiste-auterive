@@ -1,6 +1,6 @@
 <div *ngFor="let info of infos">
     <p>{{ info.title }}</p>
-    <mat-accordion *ngFor="let fiche of info.fiches">
+    <mat-accordion class="fiche" *ngFor="let fiche of info.fiches">
         <mat-expansion-panel (opened)="panelOpenState = true"
                              (closed)="panelOpenState = false">
             <mat-expansion-panel-header>
