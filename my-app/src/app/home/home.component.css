@@ -1,0 +1,15 @@
+.otherText {
+    inline-size: 250px;
+    overflow: visible;
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+    .mainRow{
+      flex-wrap:wrap;
+    }
+}
+
+.mainRowChild {
+    margin: 10px;
+}
