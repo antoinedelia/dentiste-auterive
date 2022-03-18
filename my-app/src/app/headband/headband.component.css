@@ -1,1 +1,43 @@
-.headband {}
+.headband-image {
+    display: block;
+    width: 100%;
+    max-height: 600px;
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+}
+
+.carousel-text {
+    font-family: Calibri, Arial;
+    margin-bottom: 20px;
+    font-size: 40px;
+    line-height: 1;
+    -webkit-text-stroke: 1.5px black; 
+    font-weight: bold;
+}
+  
+.carousel-text2 {
+    font-family: Calibri, Arial;
+    margin-bottom: 10px;
+    font-size: 34px;
+    line-height: 1;
+    -webkit-text-stroke: 1.5px black; 
+    font-weight: bold;
+}
+
+@media (max-width: 851px) {
+    .carousel-text {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 553px) {
+    .carousel-text {
+        display: none;
+    }
+}
+
+@media (max-width: 335px) {
+    .carousel-text2 {
+        display: none;
+    }
+}

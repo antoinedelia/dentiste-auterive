@@ -9,15 +9,45 @@ import { environment } from '../environments/environment';
 import { NavbarComponent } from './navbar/navbar.component';
 
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatButtonModule } from '@angular/material/button';
 import { HeadbandComponent } from './headband/headband.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { FlexLayoutModule } from "@angular/flex-layout";
+import { HomeComponent } from './home/home.component';
+import { FooterComponent } from './footer/footer.component';
+import { AboutComponent } from './about/about.component';
+import { EquipeComponent } from './equipe/equipe.component';
+import { ImplantsComponent } from './implants/implants.component';
+import { SmilersComponent } from './smilers/smilers.component';
+import { BlanchimentComponent } from './blanchiment/blanchiment.component';
+import { CharteComponent } from './charte/charte.component';
+import { FichesComponent } from './fiches/fiches.component';
+import { BeamComponent } from './beam/beam.component';
+import { PlanComponent } from './plan/plan.component';
+import { GalerieComponent } from './galerie/galerie.component';
+import { MentionsLegalesComponent } from './mentions-legales/mentions-legales.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    HeadbandComponent
+    HeadbandComponent,
+    HomeComponent,
+    FooterComponent,
+    AboutComponent,
+    EquipeComponent,
+    ImplantsComponent,
+    SmilersComponent,
+    BlanchimentComponent,
+    CharteComponent,
+    FichesComponent,
+    BeamComponent,
+    PlanComponent,
+    GalerieComponent,
+    MentionsLegalesComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +61,11 @@ import { HeadbandComponent } from './headband/headband.component';
     }),
     MatToolbarModule,
     MatMenuModule,
-    MatButtonModule
+    MatButtonModule,
+    NgbModule,
+    MatSidenavModule,
+    FlexLayoutModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
