@@ -8,6 +8,7 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { NavbarComponent } from './navbar/navbar.component';
 
+import { MatExpansionModule } from '@angular/material/expansion';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
@@ -29,6 +30,8 @@ import { BeamComponent } from './beam/beam.component';
 import { PlanComponent } from './plan/plan.component';
 import { GalerieComponent } from './galerie/galerie.component';
 import { MentionsLegalesComponent } from './mentions-legales/mentions-legales.component';
+
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -65,7 +68,9 @@ import { MentionsLegalesComponent } from './mentions-legales/mentions-legales.co
     NgbModule,
     MatSidenavModule,
     FlexLayoutModule,
-    MatIconModule
+    MatIconModule,
+    MatExpansionModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
