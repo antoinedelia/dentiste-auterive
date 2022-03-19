@@ -1,7 +1,7 @@
-<mat-toolbar color="primary">
+<mat-toolbar fxLayout="row nowrap" fxLayoutAlign="center center" color="primary">
 
   <button mat-button routerLink="/"><mat-icon>home</mat-icon> Accueil</button>
-  <div fxLayout="row" fxShow="false" fxShow.gt-sm>
+  <div fxShow="false" fxShow.gt-sm>
     <button mat-button [matMenuTriggerFor]="cabinetMenu">Le Cabinet</button>
     <mat-menu #cabinetMenu="matMenu">
       <button mat-menu-item routerLink="/about">À propops</button>
