@@ -1,5 +1,6 @@
 .otherText {
-    inline-size: 250px;
+    inline-size: 300px;
+    font-size: 18px;
     overflow: visible;
     text-align: center;
 }
@@ -12,4 +13,15 @@
 
 .mainRowChild {
     margin: 10px;
+}
+
+.img-circle {
+    border-radius: 50%;
+    margin: 10px;
+}
+
+@media (max-width: 553px) {
+    #formImage {
+        display: none;
+    }
 }

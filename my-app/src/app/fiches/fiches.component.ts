@@ -194,7 +194,7 @@ export class FichesComponent implements OnInit {
       fiches: [
         {
           title: "Les 10 règles d'or d'une bonne hygiène dentaire",
-          file: this.get_content('Prendre soin de ses dents', "Les 10 règles d'or d'une bonne hygiène dentaire", 'assets/text/les-10-regles-d-or-d-une-bonne-hygiene-dentaire'),
+          file: this.get_content('Prendre soin de ses dents', "Les 10 règles d'or d'une bonne hygiène dentaire", 'assets/text/les-10-regles-d-or-d-une-bonne-hygiene-dentaire.html'),
         },
         {
           title: "Brosse à dents manuelle ou brosse à dents électrique ?",

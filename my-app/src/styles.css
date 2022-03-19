@@ -6,14 +6,15 @@ html, body {
 
 body {
     margin: 0;
-    font-family: Roboto, "Helvetica Neue", sans-serif;
-    font-size: 14px;
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 18px;
 }
 
 .img-responsive {
-    display: block;
-    max-width: 100%;
-    height: auto;
+    display: block !important;
+    max-width: 100% !important;
+    height: auto !important;
+    max-height: 500px !important;
 }
 
 .video {
@@ -36,4 +37,16 @@ body {
     display: block;
     margin-right: auto;
     margin-left: auto;
+}
+
+p, nav > *, ul > * {
+    font-family: "Helvetica Neue", sans-serif !important;
+    font-size: 18px !important;
+    font-weight: normal !important;
+}
+
+h1, h2, h3 {
+    font-size: 28px !important;
+    line-height: 28px !important;
+    font-family: "Helvetica Neue", sans-serif !important;
 }
