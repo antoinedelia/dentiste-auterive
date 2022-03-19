@@ -32,7 +32,7 @@ import { GalerieComponent } from './galerie/galerie.component';
 import { MentionsLegalesComponent } from './mentions-legales/mentions-legales.component';
 
 import { HttpClientModule } from '@angular/common/http';
-
+import { VariableService } from './variables.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -72,7 +72,7 @@ import { HttpClientModule } from '@angular/common/http';
     MatExpansionModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [VariableService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

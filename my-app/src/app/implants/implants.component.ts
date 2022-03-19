@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
+import { VariableService } from '../variables.service';
 
 @Component({
   selector: 'app-implants',
@@ -7,7 +9,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ImplantsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private variableService: VariableService, private title: Title) {
+    const staticTitle = this.variableService.getTitle();
+    this.title.setTitle("Implants | " + staticTitle);
+  }
 
   ngOnInit(): void {
   }

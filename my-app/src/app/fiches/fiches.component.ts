@@ -1,5 +1,7 @@
 import { HttpClient, HttpResponse } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
+import { VariableService } from '../variables.service';
 
 @Component({
   selector: 'app-fiches',
@@ -210,7 +212,9 @@ export class FichesComponent implements OnInit {
       ]
     }
   ]
-  constructor(private http: HttpClient) {
+  constructor(private http: HttpClient, private variableService: VariableService, private title: Title) {
+    const staticTitle = this.variableService.getTitle();
+    this.title.setTitle("Fiches pratiques | " + staticTitle);
   }
 
   ngOnInit(): void {
