@@ -30,6 +30,8 @@ import { BeamComponent } from './beam/beam.component';
 import { PlanComponent } from './plan/plan.component';
 import { GalerieComponent } from './galerie/galerie.component';
 import { MentionsLegalesComponent } from './mentions-legales/mentions-legales.component';
+import { MatTableModule } from '@angular/material/table'; 
+import { MatDividerModule } from '@angular/material/divider'; 
 
 import { HttpClientModule } from '@angular/common/http';
 import { VariableService } from './variables.service';
@@ -70,7 +72,9 @@ import { VariableService } from './variables.service';
     FlexLayoutModule,
     MatIconModule,
     MatExpansionModule,
-    HttpClientModule
+    HttpClientModule,
+    MatTableModule,
+    MatDividerModule
   ],
   providers: [VariableService],
   bootstrap: [AppComponent]

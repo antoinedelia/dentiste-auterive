@@ -14,4 +14,7 @@
     #mapsText {
         display: inline-block;
     }
+    .contact-img {
+        display: none;
+    }
 }
