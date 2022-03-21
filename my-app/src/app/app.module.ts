@@ -35,6 +35,7 @@ import { MatDividerModule } from '@angular/material/divider';
 
 import { HttpClientModule } from '@angular/common/http';
 import { VariableService } from './variables.service';
+import { NotFoundComponent } from './not-found/not-found.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -52,7 +53,8 @@ import { VariableService } from './variables.service';
     BeamComponent,
     PlanComponent,
     GalerieComponent,
-    MentionsLegalesComponent
+    MentionsLegalesComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,

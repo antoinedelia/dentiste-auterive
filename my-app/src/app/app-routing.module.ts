@@ -12,6 +12,7 @@ import { ImplantsComponent } from './implants/implants.component';
 import { PlanComponent } from './plan/plan.component';
 import { SmilersComponent } from './smilers/smilers.component';
 import { MentionsLegalesComponent } from './mentions-legales/mentions-legales.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -26,6 +27,8 @@ const routes: Routes = [
   { path: 'plan', component: PlanComponent },
   { path: 'smilers', component: SmilersComponent },
   { path: 'mentions-legales', component: MentionsLegalesComponent },
+  { path: '404', component: NotFoundComponent },
+  { path: '**', redirectTo: '/404' }
 ];
 
 @NgModule({
