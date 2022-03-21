@@ -36,6 +36,8 @@ import { MatDividerModule } from '@angular/material/divider';
 import { HttpClientModule } from '@angular/common/http';
 import { VariableService } from './variables.service';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { SwiperModule } from "swiper/angular";
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -76,7 +78,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
     MatExpansionModule,
     HttpClientModule,
     MatTableModule,
-    MatDividerModule
+    MatDividerModule,
+    SwiperModule
   ],
   providers: [VariableService],
   bootstrap: [AppComponent]
