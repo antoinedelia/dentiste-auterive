@@ -20,10 +20,9 @@ jobs:
     steps:
     # Checkout the repository to the GitHub Actions runner
     - name: Checkout
-      uses: actions/checkout@v3
+      uses: actions/checkout@v2
 
     - name: Build and Test
-      uses: actions/checkout@v2
       uses: actions/setup-node@v2
       with:
         node-version: '16'
