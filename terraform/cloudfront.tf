@@ -12,10 +12,6 @@ resource "aws_cloudfront_distribution" "dist" {
   enabled             = true
   default_root_object = "index.html"
 
-  aliases = [
-    var.domain_name, "www.${var.domain_name}"
-  ]
-
   restrictions {
     geo_restriction {
       restriction_type = "none"
