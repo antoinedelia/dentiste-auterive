@@ -39,5 +39,6 @@ resource "aws_cloudfront_distribution" "dist" {
   }
 
   viewer_certificate {
+    cloudfront_default_certificate = true
   }
 }
