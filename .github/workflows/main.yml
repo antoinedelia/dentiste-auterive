@@ -31,7 +31,6 @@ jobs:
         cache-dependency-path: '**/package-lock.json'
     - run: npm ci
     - run: npm run build --if-present
-    - run: npm test
 
     # Install the latest version of Terraform CLI and configure the Terraform CLI configuration file with a Terraform Cloud user API token
     - name: Setup Terraform
