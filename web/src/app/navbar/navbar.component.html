@@ -1,0 +1,49 @@
+<mat-toolbar fxLayout="row nowrap" fxLayoutAlign="center center" color="primary">
+
+  <button mat-button routerLink="/"><mat-icon>home</mat-icon> Accueil</button>
+  <div fxShow="false" fxShow.gt-sm>
+    <button mat-button [matMenuTriggerFor]="cabinetMenu">Le Cabinet</button>
+    <mat-menu #cabinetMenu="matMenu">
+      <button mat-menu-item routerLink="/about">À propos</button>
+      <button mat-menu-item routerLink="/equipe">L'équipe</button>
+    </mat-menu>
+    <button mat-button [matMenuTriggerFor]="presationsMenu">Nos Prestations</button>
+    <mat-menu #presationsMenu="matMenu">
+      <button mat-menu-item routerLink="/implants">Implants</button>
+      <button mat-menu-item routerLink="/smilers">Smiler's l'orthodontie invisible</button>
+      <button mat-menu-item routerLink="/blanchiment">Blanchiment dentaire</button>
+    </mat-menu>
+    <button mat-button [matMenuTriggerFor]="diversMenu">Divers</button>
+    <mat-menu #diversMenu="matMenu">
+      <button mat-menu-item routerLink="/charte">Charte qualité</button>
+      <button mat-menu-item routerLink="/fiches">Fiches conseil</button>
+      <button mat-menu-item routerLink="/beam">Cone Beam</button>
+    </mat-menu>
+    <button mat-button routerLink="/plan">Plan d'accès</button>
+    <button mat-button routerLink="/galerie">Galerie</button>
+  </div>
+  <button mat-button [mat-menu-trigger-for]="menu" fxHide="false" fxHide.gt-sm>
+    <mat-icon>menu</mat-icon>
+   </button>
+</mat-toolbar>
+<mat-menu x-position="before" #menu="matMenu">
+  <button mat-menu-item [matMenuTriggerFor]="cabinetMenu">Le Cabinet</button>
+  <mat-menu #cabinetMenu="matMenu">
+    <button mat-menu-item routerLink="/about">À propops</button>
+    <button mat-menu-item routerLink="/equipe">L'équipe</button>
+  </mat-menu>
+  <button mat-menu-item [matMenuTriggerFor]="presationsMenu">Nos Prestations</button>
+  <mat-menu #presationsMenu="matMenu">
+    <button mat-menu-item routerLink="/implants">Implants</button>
+    <button mat-menu-item routerLink="/smilers">Smiler's l'orthodontie invisible</button>
+    <button mat-menu-item routerLink="/blanchiment">Blanchiment dentaire</button>
+  </mat-menu>
+  <button mat-menu-item [matMenuTriggerFor]="diversMenu">Divers</button>
+  <mat-menu #diversMenu="matMenu">
+    <button mat-menu-item routerLink="/charte">Charte qualité</button>
+    <button mat-menu-item routerLink="/fiches">Fiches conseil</button>
+    <button mat-menu-item routerLink="/beam">Cone Beam</button>
+  </mat-menu>
+  <button mat-button routerLink="/plan">Plan d'accès</button>
+  <button mat-button routerLink="/galerie">Galerie</button>
+</mat-menu>

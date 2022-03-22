@@ -1,0 +1,20 @@
+.contact-img {
+    max-width: 150px;
+}
+
+#mapsText {
+    display: none;
+}
+
+
+@media (max-width: 600px) {
+    #mapsFrame {
+        display: none;
+    }
+    #mapsText {
+        display: inline-block;
+    }
+    .contact-img {
+        display: none;
+    }
+}
