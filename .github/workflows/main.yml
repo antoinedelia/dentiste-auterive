@@ -23,15 +23,6 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
 
-    - name: Build and Test
-      uses: actions/setup-node@v2
-      with:
-        node-version: '16'
-        cache: 'npm'
-        cache-dependency-path: '**/package-lock.json'
-    - run: npm ci
-    - run: npm run build --if-present
-
     # Install the latest version of Terraform CLI and configure the Terraform CLI configuration file with a Terraform Cloud user API token
     - name: Setup Terraform
       uses: hashicorp/setup-terraform@v1
@@ -59,3 +50,23 @@ jobs:
       working-directory: ./terraform
       if: github.ref == 'refs/heads/master' && github.event_name == 'push'
       run: terraform apply -auto-approve
+
+    - name: Build
+      uses: actions/setup-node@v2
+      with:
+        node-version: '16'
+        cache: 'npm'
+        cache-dependency-path: '**/package-lock.json'
+    - run: npm ci
+    - run: npm run build --if-present
+
+    - name: Set AWS credentials
+      uses: jakejarvis/s3-sync-action@master
+      with:
+        args: --acl public-read --follow-symlinks --delete
+      env:
+        AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
+        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        AWS_REGION: 'eu-west-1'
+        SOURCE_DIR: 'dist'
