@@ -36,7 +36,22 @@ export class GalerieComponent implements OnInit {
       title: "Salle de soin du Docteur Delia"
     },
     {
+      src: "assets/img/gallery/cabinet-delia-2.jpg",
+      alt: "Salle de soin du Docteur Delia",
+      title: "Salle de soin du Docteur Delia"
+    },
+    {
+      src: "assets/img/gallery/cabinet-delia-3.jpg",
+      alt: "Salle de soin du Docteur Delia",
+      title: "Salle de soin du Docteur Delia"
+    },
+    {
       src: "assets/img/gallery/cabinet-sperte.jpg",
+      alt: "Salle de soin du Docteur Sperte",
+      title: "Salle de soin du Docteur Sperte"
+    },
+    {
+      src: "assets/img/gallery/cabinet-sperte-2.jpg",
       alt: "Salle de soin du Docteur Sperte",
       title: "Salle de soin du Docteur Sperte"
     },
