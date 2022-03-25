@@ -24,15 +24,15 @@
     font-weight: bold;
 }
 
-@media (max-width: 851px) {
+@media (max-width: 710px) {
     .carousel-text {
-        font-size: 30px;
+        display: none;
     }
 }
 
-@media (max-width: 553px) {
-    .carousel-text {
-        display: none;
+@media (max-width: 426px) {
+    .carousel-text2 {
+        font-size: 28px !important;
     }
 }
 
