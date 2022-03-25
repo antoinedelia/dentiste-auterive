@@ -3,7 +3,7 @@ data "aws_route53_zone" "zone" {
   private_zone = false
 }
 
-resource "aws_route53_record" "record" {
+resource "aws_route53_record" "record_certificate" {
   for_each = {
     for dvo in aws_acm_certificate.cert.domain_validation_options : dvo.domain_name => {
       name   = dvo.resource_record_name
@@ -17,5 +17,14 @@ resource "aws_route53_record" "record" {
   records         = [each.value.record]
   ttl             = 60
   type            = each.value.type
+  zone_id         = data.aws_route53_zone.zone.zone_id
+}
+
+resource "aws_route53_record" "record_cloudfront" {
+  allow_overwrite = true
+  name            = var.domain_name
+  records         = [aws_cloudfront_distribution.dist.domain_name]
+  ttl             = 60
+  type            = "A"
   zone_id         = data.aws_route53_zone.zone.zone_id
 }
