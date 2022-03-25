@@ -23,8 +23,13 @@ resource "aws_route53_record" "record_certificate" {
 resource "aws_route53_record" "record_cloudfront" {
   allow_overwrite = true
   name            = var.domain_name
-  records         = [aws_cloudfront_distribution.dist.domain_name]
   ttl             = 60
   type            = "A"
   zone_id         = data.aws_route53_zone.zone.zone_id
+
+  alias {
+    name                   = aws_cloudfront_distribution.dist.domain_name
+    zone_id                = aws_cloudfront_distribution.dist.hosted_zone_id
+    evaluate_target_health = true
+  }
 }
