@@ -23,7 +23,6 @@ resource "aws_route53_record" "record_certificate" {
 resource "aws_route53_record" "record_cloudfront" {
   allow_overwrite = true
   name            = var.domain_name
-  ttl             = 60
   type            = "A"
   zone_id         = data.aws_route53_zone.zone.zone_id
 
