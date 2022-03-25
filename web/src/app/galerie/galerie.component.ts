@@ -11,57 +11,57 @@ export class GalerieComponent implements OnInit {
   
   photos = [
     {
-      src: "assets/img/gallery/neige.jpg",
+      src: "assets/img/gallery/neige",
       alt: "Neige au cabinet",
       title: "Le cabinet sous la neige"
     },
     {
-      src: "assets/img/gallery/arbre.jpg",
+      src: "assets/img/gallery/arbre",
       alt: "Arbres devant le cabinet",
       title: "Arbres devant le cabinet"
     },
     {
-      src: "assets/img/gallery/entree.jpg",
+      src: "assets/img/gallery/entree",
       alt: "L'entrée du cabinet",
       title: "L'accueil du cabinet d'Auterive"
     },
     {
-      src: "assets/img/gallery/bureau.jpg",
+      src: "assets/img/gallery/bureau",
       alt: "Le bureau du Docteur Delia",
       title: "Bureau du Docteur DELIA"
     },
     {
-      src: "assets/img/gallery/cabinet-delia.jpg",
+      src: "assets/img/gallery/cabinet-delia",
       alt: "Salle de soin du Docteur Delia",
       title: "Salle de soin du Docteur Delia"
     },
     {
-      src: "assets/img/gallery/cabinet-delia-2.jpg",
+      src: "assets/img/gallery/cabinet-delia-2",
       alt: "Salle de soin du Docteur Delia",
       title: "Salle de soin du Docteur Delia"
     },
     {
-      src: "assets/img/gallery/cabinet-delia-3.jpg",
+      src: "assets/img/gallery/cabinet-delia-3",
       alt: "Salle de soin du Docteur Delia",
       title: "Salle de soin du Docteur Delia"
     },
     {
-      src: "assets/img/gallery/cabinet-sperte.jpg",
+      src: "assets/img/gallery/cabinet-sperte",
       alt: "Salle de soin du Docteur Sperte",
       title: "Salle de soin du Docteur Sperte"
     },
     {
-      src: "assets/img/gallery/cabinet-sperte-2.jpg",
+      src: "assets/img/gallery/cabinet-sperte-2",
       alt: "Salle de soin du Docteur Sperte",
       title: "Salle de soin du Docteur Sperte"
     },
     {
-      src: "assets/img/gallery/equipe.jpg",
+      src: "assets/img/gallery/equipe",
       alt: "L'équipe du cabinet",
       title: "L'équipe du cabinet"
     },
     {
-      src: "assets/img/gallery/delia_masque.jpg",
+      src: "assets/img/gallery/delia_masque",
       alt: "Nous sommes équipés pour vous recevoir !",
       title: "Nous sommes équipés pour vous recevoir !"
     },

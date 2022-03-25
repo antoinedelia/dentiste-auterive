@@ -18,9 +18,16 @@
            href="assets/files/Questionnaire%20dentaire.pdf"
            rel="noopener noreferrer"
            target="_blank">
-            <img id="formImage" class="img-responsive"
-                 src="assets/img/formulaire.png"
-                 alt="Questionnaire médical">
+            <picture>
+                <source srcSet="assets/img/formulaire.avif"
+                        type="image/avif">
+                <source srcSet="assets/img/formulaire.webp"
+                        type="image/webp">
+                <img id="formImage"
+                     class="img-responsive"
+                     src="assets/img/formulaire.png"
+                     alt="Questionnaire médical">
+            </picture>
         </a>
     </div>
 </div>
@@ -32,42 +39,63 @@
     <div fxLayout="column wrap"
          fxLayoutAlign="center center">
         <a routerLink="about">
-            <img class="img-circle"
-                 src="assets/img/dent.png"
-                 alt="dent"
-                 style="width: 140px; height: 140px;">
+            <picture>
+                <source srcSet="assets/img/dent.avif"
+                        type="image/avif">
+                <source srcSet="assets/img/dent.webp"
+                        type="image/webp">
+                <img class="img-circle"
+                     src="assets/img/dent.png"
+                     alt="dent"
+                     style="width: 140px; height: 140px;">
+            </picture>
         </a>
         <h2>Soins</h2>
         <p class="otherText">Les soins proposés par le cabinet des docteurs DELIA, SPERTE et ARAGON</p>
-        <button mat-button aria-label="Soins"
+        <button mat-button
+                aria-label="Soins"
                 color="primary"
                 routerLink="about">Soins &raquo;</button>
     </div>
     <div fxLayout="column wrap"
          fxLayoutAlign="center center">
         <a routerLink="equipe">
-            <img class="img-circle"
-                 src="assets/img/dentiste.png"
-                 alt="dentiste"
-                 style="width: 140px; height: 140px;">
+            <picture>
+                <source srcSet="assets/img/dentiste.avif"
+                        type="image/avif">
+                <source srcSet="assets/img/dentiste.webp"
+                        type="image/webp">
+                <img class="img-circle"
+                     src="assets/img/dentiste.png"
+                     alt="dentiste"
+                     style="width: 140px; height: 140px;">
+            </picture>
         </a>
         <h2>Dentistes</h2>
         <p class="otherText">Les dentistes du cabinet d'Auterive.</p>
-        <button mat-button aria-label="Dentistes"
+        <button mat-button
+                aria-label="Dentistes"
                 color="primary"
                 routerLink="equipe">Dentistes &raquo;</button>
     </div>
     <div fxLayout="column wrap"
          fxLayoutAlign="center center">
         <a routerLink="plan">
-            <img class="img-circle"
-                 src="assets/img/maps.png"
-                 alt="location"
-                 style="width: 140px; height: 140px;">
+            <picture>
+                <source srcSet="assets/img/maps.avif"
+                        type="image/avif">
+                <source srcSet="assets/img/maps.webp"
+                        type="image/webp">
+                <img class="img-circle"
+                     src="assets/img/maps.png"
+                     alt="location"
+                     style="width: 140px; height: 140px;">
+            </picture>
         </a>
         <h2>Accès et Horaires</h2>
         <p class="otherText">L'accès au cabinet dentaire d'Auterive<br /> ainsi que les horaires se trouvent ici.</p>
-        <button mat-button aria-label="Accès et Horaires"
+        <button mat-button
+                aria-label="Accès et Horaires"
                 color="primary"
                 routerLink="plan">Accès et Horaires &raquo;</button>
     </div>
@@ -75,7 +103,8 @@
 
 <mat-divider></mat-divider>
 
-<div class="mainRow" fxLayout="row"
+<div class="mainRow"
+     fxLayout="row"
      fxLayoutAlign="space-evenly center">
     <div class="mainRowChild">
         <h3>Histoire du cabinet</h3>
@@ -87,20 +116,33 @@
         </p>
     </div>
     <div class="mainRowChild">
-        <img class="img-responsive"
-             src="assets/img/plaque.jpg"
-             alt="Le cabinet dentaire">
+        <picture>
+            <source srcSet="assets/img/plaque.avif"
+                    type="image/avif">
+            <source srcSet="assets/img/plaque.webp"
+                    type="image/webp">
+            <img class="img-responsive"
+                 src="assets/img/plaque.jpg"
+                 alt="Le cabinet dentaire">
+        </picture>
     </div>
 </div>
 
 <mat-divider></mat-divider>
 
-<div class="mainRow" fxLayout="row"
+<div class="mainRow"
+     fxLayout="row"
      fxLayoutAlign="space-evenly center">
     <div class="mainRowChild">
-        <img class="img-responsive"
-             src="assets/img/salle_attente.jpg"
-             alt="Salle d'attente">
+        <picture>
+            <source srcSet="assets/img/salle_attente.avif"
+                    type="image/avif">
+            <source srcSet="assets/img/salle_attente.webp"
+                    type="image/webp">
+            <img class="img-responsive"
+                 src="assets/img/salle_attente.jpg"
+                 alt="Salle d'attente">
+        </picture>
     </div>
     <div class="mainRowChild">
         <h3>Salle d'attente</h3>
@@ -111,7 +153,8 @@
 
 <mat-divider></mat-divider>
 
-<div class="mainRow" fxLayout="row"
+<div class="mainRow"
+     fxLayout="row"
      fxLayoutAlign="space-evenly center">
     <div class="mainRowChild">
         <h3>Parking</h3>
@@ -119,8 +162,14 @@
             accès facilité aux brancards et personnes handicapés.</p>
     </div>
     <div class="mainRowChild">
-        <img class="featurette-image img-responsive"
-             src="assets/img/parking.jpg"
-             alt="Parking">
+        <picture>
+            <source srcSet="assets/img/parking.avif"
+                    type="image/avif">
+            <source srcSet="assets/img/parking.webp"
+                    type="image/webp">
+            <img class="featurette-image img-responsive"
+                 src="assets/img/parking.jpg"
+                 alt="Parking">
+        </picture>
     </div>
 </div>

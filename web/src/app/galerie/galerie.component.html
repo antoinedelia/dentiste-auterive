@@ -1,9 +1,17 @@
 <div>
     <ngb-carousel [animation]="true">
-        <ng-template ngbSlide *ngFor="let photo of photos">
+        <ng-template ngbSlide
+                     *ngFor="let photo of photos">
             <div>
-                <img class="img-responsive" [src]="photo.src"
-                [alt]="photo.alt">
+                <picture>
+                    <source [attr.srcSet]="photo.src + '.avif'"
+                            type="image/avif">
+                    <source [attr.srcSet]="photo.src + '.webp'"
+                            type="image/webp">
+                    <img class="img-responsive"
+                         [src]="photo.src + '.jpg'"
+                         [alt]="photo.alt">
+                </picture>
             </div>
             <div class="carousel-caption">
                 <h3>{{ photo.title }}</h3>
