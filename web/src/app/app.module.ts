@@ -30,12 +30,14 @@ import { BeamComponent } from './beam/beam.component';
 import { PlanComponent } from './plan/plan.component';
 import { GalerieComponent } from './galerie/galerie.component';
 import { MentionsLegalesComponent } from './mentions-legales/mentions-legales.component';
-import { MatTableModule } from '@angular/material/table'; 
-import { MatDividerModule } from '@angular/material/divider'; 
+import { MatTableModule } from '@angular/material/table';
+import { MatDividerModule } from '@angular/material/divider';
 
 import { HttpClientModule } from '@angular/common/http';
 import { VariableService } from './variables.service';
 import { NotFoundComponent } from './not-found/not-found.component';
+
+import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
   declarations: [
@@ -78,6 +80,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
     HttpClientModule,
     MatTableModule,
     MatDividerModule,
+    ToastrModule.forRoot(),
   ],
   providers: [VariableService],
   bootstrap: [AppComponent]
