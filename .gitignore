@@ -45,3 +45,5 @@ Thumbs.db
 
 **/.terraform
 **/**.hcl
+
+*:Zone.Identifier
