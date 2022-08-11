@@ -20,7 +20,7 @@ export class HomeComponent implements OnInit {
   }
 
   showSuccess() {
-    this.toastr.warning("Le cabinet sera fermé du jeudi 11 août au lundi 22 août inclus. Merci de votre compréhension.", "Congés Août", {
+    this.toastr.warning("Le cabinet est actuellement fermé et reprendra ses rendez-vous le lundi 22 août. Merci de votre compréhension.", "Congés Août", {
       closeButton: true,
       disableTimeOut: true,
       positionClass: "toast-bottom-right"
