@@ -13,13 +13,13 @@ export class HomeComponent implements OnInit {
   constructor(private variableService: VariableService, private title: Title, private toastr: ToastrService) {
     const staticTitle = this.variableService.getTitle();
     this.title.setTitle(staticTitle);
-    this.showSuccess();
+    // this.showToast();
   }
 
   ngOnInit(): void {
   }
 
-  showSuccess() {
+  showToast() {
     this.toastr.warning("Le cabinet est actuellement fermé et reprendra ses rendez-vous le lundi 22 août. Merci de votre compréhension.", "Congés Août", {
       closeButton: true,
       disableTimeOut: true,
