@@ -11,6 +11,9 @@ jobs:
     name: 'Build & Deploy'
     runs-on: ubuntu-latest
     environment: production
+    permissions:
+      id-token: write
+      contents: read
 
     # Use the Bash shell regardless whether the GitHub Actions runner is ubuntu-latest, macos-latest, or windows-latest
     defaults:
@@ -19,6 +22,14 @@ jobs:
         working-directory: web
 
     steps:
+    - uses: actions/checkout@v3
+    - uses: dorny/paths-filter@v2
+      id: filter
+      with:
+        filters: |
+          web:
+            - 'web/**'
+
     # Checkout the repository to the GitHub Actions runner
     - name: Checkout
       uses: actions/checkout@v2
@@ -61,6 +72,7 @@ jobs:
     - run: npm run build --if-present
 
     - name: Deploy to AWS
+      if: steps.filter.outputs.web == 'true'
       uses: jakejarvis/s3-sync-action@master
       with:
         args: --acl public-read --follow-symlinks --delete
