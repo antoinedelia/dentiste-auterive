@@ -97,11 +97,13 @@ jobs:
         SOURCE_DIR: 'web/dist/my-app/'
 
     - name: Configure AWS credentials
+      if: steps.filter.outputs.web == 'true'
       uses: aws-actions/configure-aws-credentials@v1
       with:
         role-to-assume: arn:aws:iam::646082475080:role/dentiste-auterive-github-role
         aws-region: eu-west-1
 
     - name: Invalidate cache for Cloudfront distribution
+      if: steps.filter.outputs.web == 'true'
       run: |
         for id in $(aws cloudfront list-distributions --query "DistributionList.Items[*].{id:Id,origin:Origins.Items[0].Id}[?origin=='${{ secrets.AWS_S3_BUCKET }}'].id" --output text);do aws cloudfront create-invalidation --distribution-id $id --paths "/*";done;
