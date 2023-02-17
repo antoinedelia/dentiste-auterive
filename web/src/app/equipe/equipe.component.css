@@ -1,0 +1,16 @@
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.fixed {
+    order: 2;
+}
+
+.after {
+    order: 3;
+}
+
+.last {
+    order: 4;
+}
