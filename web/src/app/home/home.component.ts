@@ -21,7 +21,7 @@ export class HomeComponent implements OnInit {
   }
 
   showToast() {
-    this.toastr.info(`Chers patients, toute l'équipe vous souhaite une très belle nouvelle année 2024 !
+    this.toastr.warning(`Chers patients, toute l'équipe vous souhaite une très belle nouvelle année 2024 !
     <br>
     <br>
     A cette occasion, des travaux importants vont débuter pour agrandir et améliorer nos locaux. Le parking sera inutilisable quelques mois, et l'entrée sera déviée sur le côté du bâtiment."
