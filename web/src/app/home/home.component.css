@@ -6,8 +6,8 @@
 }
 
 @media (max-width: 800px) {
-    .mainRow{
-      flex-wrap:wrap;
+    .mainRow {
+        flex-wrap: wrap;
     }
 }
 
@@ -23,5 +23,11 @@
 @media (max-width: 553px) {
     #formImage {
         display: none;
+    }
+}
+
+@media (min-width: 800px) {
+    ::ng-deep .custom-toast-width {
+        width: 40vw !important;
     }
 }

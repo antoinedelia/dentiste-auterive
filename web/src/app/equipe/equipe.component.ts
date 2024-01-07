@@ -77,6 +77,14 @@ export class EquipeComponent implements OnInit {
         "Responsable accueil, suivi des patients et comptabilité",
       ],
     },
+    {
+      name: "Lou",
+      img: "lou",
+      descriptions: [
+        "Assistante dentaire qualifiée depuis 2015",
+        "Diplomée de l'école AGORA Toulouse",
+      ],
+    },
   ]
 
   constructor(private variableService: VariableService, private title: Title) {
