@@ -24,6 +24,8 @@ export class EquipeComponent implements OnInit {
         "Certificat de prothèses sur implant Dentsply - Toulouse 2008",
         "Certificat anesthésie sans douleur Quicksleeper - Toulouse 2006",
         "Certificat de suivi de l'enseignement magistral et pratique en biomatériaux et implantologie - Angers 2006",
+        "Attestation aux gestes d'urgence niveau 2 en 2023",
+        "Formation Endo-club Coltène en 2023",
       ],
     },
     {
@@ -32,6 +34,11 @@ export class EquipeComponent implements OnInit {
       descriptions: [
         "Docteur en chirurgie dentaire",
         "Diplomé de la faculté de Toulouse",
+        "Attestation aux gestes d'urgence niveau 2",
+        "Formation Endo-club Coltène en 2023",
+        "Formation implantologie orale Tissu Level TBR en 2023",
+        "Formation validante cone beam et radioprotection",
+        "Formation endodontie efficace learnylib en 2022",
       ],
     },
     {
