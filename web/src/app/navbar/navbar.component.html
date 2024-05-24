@@ -21,6 +21,7 @@
     </mat-menu>
     <button mat-button aria-label="Plan d'accès" routerLink="/plan">Plan d'accès</button>
     <button mat-button aria-label="Galerie" routerLink="/galerie">Galerie</button>
+    <button mat-button aria-label="Prendre RDV" (click)="goToLink('https://rdvdentiste.net/auterive/delia-aragon.html')">Prendre RDV</button>
   </div>
   <button mat-button aria-label="menu" [mat-menu-trigger-for]="menu" fxHide="false" fxHide.gt-sm>
     <mat-icon>menu</mat-icon>
@@ -46,4 +47,5 @@
   </mat-menu>
   <button mat-button aria-label="Plan d'accès" routerLink="/plan">Plan d'accès</button>
   <button mat-button aria-label="Galerie" routerLink="/galerie">Galerie</button>
+  <button mat-button aria-label="Prendre RDV" (click)="goToLink('https://rdvdentiste.net/auterive/delia-aragon.html')">Prendre RDV</button>
 </mat-menu>
