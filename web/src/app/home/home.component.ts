@@ -21,21 +21,13 @@ export class HomeComponent implements OnInit {
   }
 
   showToast() {
-    this.toastr.warning(`Chers patients, toute l'équipe vous souhaite une très belle nouvelle année 2024 !
-    <br>
-    <br>
-    A cette occasion, des travaux importants vont débuter pour agrandir et améliorer nos locaux. Le parking sera inutilisable quelques mois, et l'entrée sera déviée sur le côté du bâtiment."
-    <br>
-    <br>
-    Les WC peuvent aussi être condamnés quelques temps.
-    <br>
-    Le parking de l'école Michelet est bien sûr disponible.
+    this.toastr.warning(`Le cabinet sera fermé du lundi 8 juillet au vendredi 26 juillet pour la fin des travaux. Réouverture le lundi 29 juillet.
     <br>
     <br>
     Merci de votre compréhension.
     <br>
     <br>
-    L'équipe soignante.`, "Travaux", {
+    L'équipe soignante.`, "Fermeture exceptionnelle", {
       closeButton: true,
       disableTimeOut: true,
       positionClass: "toast-bottom-right",
