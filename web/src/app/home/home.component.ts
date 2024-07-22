@@ -21,7 +21,7 @@ export class HomeComponent implements OnInit {
   }
 
   showToast() {
-    this.toastr.warning(`Le cabinet sera fermé du lundi 8 juillet au vendredi 26 juillet pour la fin des travaux. Réouverture le lundi 29 juillet.
+    this.toastr.warning(`Le cabinet sera fermé du lundi 8 juillet au mercredi 31 juillet pour la fin des travaux. Réouverture le jeudi 1er août.
     <br>
     <br>
     Merci de votre compréhension.
