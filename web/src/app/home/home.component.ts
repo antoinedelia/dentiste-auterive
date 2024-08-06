@@ -14,7 +14,7 @@ export class HomeComponent implements OnInit {
     const staticTitle = this.variableService.getTitle();
     this.title.setTitle(staticTitle);
 
-    this.showToast();
+    // this.showToast();
   }
 
   ngOnInit(): void {
