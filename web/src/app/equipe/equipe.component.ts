@@ -50,16 +50,6 @@ export class EquipeComponent implements OnInit {
       ],
     },
     {
-      name: "Marion Sperte",
-      img: "sperte",
-      descriptions: [
-        "Docteur en chirurgie dentaire",
-        "Diplomée de la faculté de Toulouse",
-        "Certificat de formation à l'orthodontie invisible par gouttières transparentes SMILERS® - Toulouse 2017",
-        "Le Dr Sperte a quitté notre cabinet en septembre 2023",
-      ],
-    },
-    {
       name: "Laura",
       img: "laura",
       descriptions: [
@@ -76,20 +66,18 @@ export class EquipeComponent implements OnInit {
       ],
     },
     {
-      name: "Mégane",
-      img: "megane",
-      descriptions: [
-        "Assistante dentaire qualifiée depuis 2018",
-        "Diplomée de l'école AGORA Toulouse",
-        "Responsable accueil, suivi des patients et comptabilité",
-      ],
-    },
-    {
       name: "Lou",
       img: "lou",
       descriptions: [
         "Assistante dentaire qualifiée depuis 2015",
         "Diplomée de l'école AGORA Toulouse",
+      ],
+    },
+    {
+      name: "Tiffany",
+      img: "tiffany",
+      descriptions: [
+        "Assistante dentaire en formation",
       ],
     },
   ]
