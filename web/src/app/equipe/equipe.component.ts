@@ -13,6 +13,7 @@ export class EquipeComponent implements OnInit {
     {
       name: "Christophe Delia",
       img: "delia",
+      gender: "m",
       descriptions: [
         "Docteur en chirurgie dentaire",
         "Diplomé de la faculté de Toulouse",
@@ -31,6 +32,7 @@ export class EquipeComponent implements OnInit {
     {
       name: "Pierre Mérieux",
       img: "pierre",
+      gender: "m",
       descriptions: [
         "Docteur en chirurgie dentaire",
         "Diplomé de la faculté de Toulouse",
@@ -44,6 +46,7 @@ export class EquipeComponent implements OnInit {
     {
       name: "Paul Aragon",
       img: "aragon",
+      gender: "m",
       descriptions: [
         "Docteur en chirurgie dentaire",
         "Diplomé de la faculté de Toulouse",
@@ -51,23 +54,26 @@ export class EquipeComponent implements OnInit {
     },
     {
       name: "Rudy Arné",
-      img: "arne",
+      gender: "m",
       descriptions: [
         "Docteur en chirurgie dentaire",
         "Diplomé de la faculté de Toulouse",
       ],
+      doctolib_url: "https://www.doctolib.fr/dentiste/auterive/rudy-arne"
     },
     {
       name: "Pierre Delia",
-      img: "delia_pierre",
+      gender: "m",
       descriptions: [
         "Docteur en chirurgie dentaire",
         "Diplomé de la faculté de Toulouse",
       ],
+      doctolib_url: "https://www.doctolib.fr/interne-en-chirurgie-dentaire/auterive/pierre-delia"
     },
     {
       name: "Laura",
       img: "laura",
+      gender: "f",
       descriptions: [
         "Assistante dentaire qualifiée depuis 2016",
         "Diplomée de l'ESAD Toulouse",
@@ -76,6 +82,7 @@ export class EquipeComponent implements OnInit {
     {
       name: "Alizée",
       img: "alizee",
+      gender: "f",
       descriptions: [
         "Assistante dentaire qualifiée depuis 2023",
         "Diplomée de l'ESAD Toulouse",
@@ -84,6 +91,7 @@ export class EquipeComponent implements OnInit {
     {
       name: "Lou",
       img: "lou",
+      gender: "f",
       descriptions: [
         "Assistante dentaire qualifiée depuis 2015",
         "Diplomée de l'école AGORA Toulouse",
@@ -91,7 +99,7 @@ export class EquipeComponent implements OnInit {
     },
     {
       name: "Tiffany",
-      img: "tiffany",
+      gender: "f",
       descriptions: [
         "Assistante dentaire en formation",
       ],
