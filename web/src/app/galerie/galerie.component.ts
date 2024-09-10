@@ -17,8 +17,8 @@ export class GalerieComponent implements OnInit {
     },
     {
       src: "assets/img/gallery/arbre",
-      alt: "Arbres devant le cabinet",
-      title: "Arbres devant le cabinet"
+      alt: "Les deux cyprès du cabinet",
+      title: "Les deux cyprès du cabinet"
     },
     {
       src: "assets/img/gallery/entree",
@@ -44,11 +44,6 @@ export class GalerieComponent implements OnInit {
       src: "assets/img/gallery/cabinet-delia-3",
       alt: "Salle de soin du Docteur Delia",
       title: "Salle de soin du Docteur Delia"
-    },
-    {
-      src: "assets/img/gallery/cabinet-sperte",
-      alt: "Salle de soin du Docteur Sperte",
-      title: "Salle de soin du Docteur Sperte"
     },
     {
       src: "assets/img/gallery/cabinet-sperte-2",

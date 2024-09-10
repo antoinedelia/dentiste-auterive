@@ -50,6 +50,22 @@ export class EquipeComponent implements OnInit {
       ],
     },
     {
+      name: "Rudy Arné",
+      img: "arne",
+      descriptions: [
+        "Docteur en chirurgie dentaire",
+        "Diplomé de la faculté de Toulouse",
+      ],
+    },
+    {
+      name: "Pierre Delia",
+      img: "delia_pierre",
+      descriptions: [
+        "Docteur en chirurgie dentaire",
+        "Diplomé de la faculté de Toulouse",
+      ],
+    },
+    {
       name: "Laura",
       img: "laura",
       descriptions: [
