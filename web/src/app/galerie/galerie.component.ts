@@ -8,7 +8,7 @@ import { VariableService } from '../variables.service';
   styleUrls: ['./galerie.component.scss']
 })
 export class GalerieComponent implements OnInit {
-  
+
   photos = [
     {
       src: "assets/img/gallery/neige",
@@ -46,9 +46,9 @@ export class GalerieComponent implements OnInit {
       title: "Salle de soin du Docteur Delia"
     },
     {
-      src: "assets/img/gallery/cabinet-sperte-2",
-      alt: "Salle de soin du Docteur Sperte",
-      title: "Salle de soin du Docteur Sperte"
+      src: "assets/img/gallery/cabinet-merieux",
+      alt: "Salle de soin du Docteur Merieux",
+      title: "Salle de soin du Docteur Merieux"
     },
     {
       src: "assets/img/gallery/equipe",
@@ -68,8 +68,8 @@ export class GalerieComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    
-    
+
+
   }
 
 }
