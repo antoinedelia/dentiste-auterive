@@ -53,13 +53,12 @@ export class EquipeComponent implements OnInit {
       ],
     },
     {
-      name: "Rudy Arné",
+      name: "Régis Nicolas",
       gender: "m",
       descriptions: [
         "Docteur en chirurgie dentaire",
         "Diplomé de la faculté de Toulouse",
       ],
-      doctolib_url: "https://www.doctolib.fr/dentiste/auterive/rudy-arne"
     },
     {
       name: "Pierre Delia",
@@ -100,6 +99,7 @@ export class EquipeComponent implements OnInit {
     {
       name: "Tiffany",
       gender: "f",
+      img: "tiffany",
       descriptions: [
         "Assistante dentaire en formation",
       ],
