@@ -53,7 +53,7 @@ export class EquipeComponent implements OnInit {
       ],
     },
     {
-      name: "Régis Nicolas",
+      name: "Nicolas Régis",
       gender: "m",
       descriptions: [
         "Docteur en chirurgie dentaire",
