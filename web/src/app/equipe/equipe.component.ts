@@ -57,7 +57,11 @@ export class EquipeComponent implements OnInit {
       gender: "m",
       descriptions: [
         "Docteur en chirurgie dentaire",
-        "Diplomé de la faculté de Toulouse",
+        "Diplomé de la faculté de Toulouse en 2004",
+        "Formation SAPO IMPLANT en 2011",
+        "Formation MARK BONNER en 2012",
+        "Formation Aligneurs SMILERS en 2015",
+        "Diplôme d'Université en Implantologie Orale et Biomécanique en 2017",
       ],
     },
     {
