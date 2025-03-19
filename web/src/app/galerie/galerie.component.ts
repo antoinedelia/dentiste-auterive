@@ -46,9 +46,19 @@ export class GalerieComponent implements OnInit {
       title: "Salle de soin du Docteur Delia"
     },
     {
+      src: "assets/img/gallery/salle-soin-delia",
+      alt: "Salle de soin du Docteur Delia",
+      title: "Salle de soin du Docteur Delia"
+    },
+    {
       src: "assets/img/gallery/cabinet-merieux",
       alt: "Salle de soin du Docteur Merieux",
       title: "Salle de soin du Docteur Merieux"
+    },
+    {
+      src: "assets/img/gallery/salle-sterilisation",
+      alt: "Salle de stérilisation",
+      title: "Salle de stérilisation"
     },
     {
       src: "assets/img/gallery/equipe",
