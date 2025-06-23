@@ -6,7 +6,7 @@ export default defineAppConfig({
     title: 'Dentiste Auterive | Docteurs DELIA, MERIEUX et REGIS - Cabinet dentaire Michelet',
     phone: '05 61 50 89 12',
     email: 'cdm31190@orange.fr',
-    rdvUrl: '#', // Mettre le vrai lien Doctolib ou autre ici
+    rdvUrl: 'https://rdvdentiste.net/auterive/delia-aragon.html',
     address: {
       street: '1 Rue Michelet',
       zip: '31190',
@@ -25,7 +25,6 @@ export default defineAppConfig({
     googleMapsEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2901.2969936554086!2d1.4829261157157918!3d43.34989788000785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aec2fd1e1f4b01%3A0x5343a2179d4a785a!2sDr%20Delia%20-%20Dentiste%20%C3%A0%20Auterive!5e0!3m2!1sfr!2sfr!4v1606828167657!5m2!1sfr!2sfr'
   },
 
-  // Définition de la navigation principale
   navigation: [
     { name: 'Accueil', href: '/' },
     { name: 'À propos', href: '/a-propos' },
@@ -50,12 +49,11 @@ export default defineAppConfig({
     { name: 'Plan d\'accès', href: '/plan-acces' },
   ],
 
-  // NOUVELLE SECTION : Données de l'équipe
   team: {
     doctors: [
       {
         name: "Dr. Christophe Delia",
-        img: "delia.jpg", // Nom du fichier image dans /public/team/
+        img: "delia.jpg",
         descriptions: [
           "Docteur en chirurgie dentaire, diplômé de la faculté de Toulouse",
           "Diplôme d'État de manipulateur d'électroradiologie médicale",
@@ -84,7 +82,7 @@ export default defineAppConfig({
       },
       {
         name: "Dr. Pierre Delia",
-        img: null, // Pas d'image pour ce membre, un placeholder sera utilisé
+        img: null,
         descriptions: [
           "Docteur en chirurgie dentaire",
           "Diplômé de la faculté de Toulouse",
@@ -118,5 +116,19 @@ export default defineAppConfig({
         descriptions: [],
       },
     ]
-  }
+  },
+  gallery: [
+    { src: 'neige.jpg', alt: "Le cabinet sous la neige", title: "Le cabinet sous la neige" },
+    { src: 'arbre.jpg', alt: "Les deux cyprès du cabinet", title: "Les deux cyprès du cabinet" },
+    { src: 'entree.jpg', alt: "L'entrée du cabinet", title: "L'accueil du cabinet" },
+    { src: 'bureau.jpg', alt: "Le bureau du Docteur Delia", title: "Bureau du Docteur DELIA" },
+    { src: 'cabinet-delia.jpg', alt: "Salle de soin du Docteur Delia", title: "Salle de soin du Docteur Delia" },
+    { src: 'cabinet-delia-2.jpg', alt: "Salle de soin du Docteur Delia", title: "Salle de soin du Docteur Delia" },
+    { src: 'cabinet-delia-3.jpg', alt: "Salle de soin du Docteur Delia", title: "Salle de soin du Docteur Delia" },
+    { src: 'salle-soin-delia.jpg', alt: "Salle de soin du Docteur Delia", title: "Salle de soin du Docteur Delia" },
+    { src: 'cabinet-merieux.jpg', alt: "Salle de soin du Docteur Merieux", title: "Salle de soin du Docteur Merieux" },
+    { src: 'salle-sterilisation.jpg', alt: "Salle de stérilisation", title: "Salle de stérilisation" },
+    { src: 'equipe.jpg', alt: "L'équipe du cabinet", title: "L'équipe du cabinet" },
+    { src: 'delia_masque.jpg', alt: "Nous sommes équipés pour vous recevoir !", title: "Nous sommes équipés pour vous recevoir !" },
+  ]
 })
