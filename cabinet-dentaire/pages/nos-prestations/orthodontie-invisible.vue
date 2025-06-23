@@ -37,7 +37,7 @@
 
                 <div class="flex flex-col md:flex-row items-center gap-8 my-12 not-prose">
                     <div class="md:w-1/2">
-                        <NuxtImg src="https://placehold.co/600x400/e0f2fe/0c4a6e?text=Gouttières+Smilers"
+                        <NuxtImg src="gouttieres.jpg"
                                  class="rounded-lg shadow-md w-full"
                                  alt="Gouttières d'orthodontie invisible" />
                     </div>
