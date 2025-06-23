@@ -122,9 +122,11 @@
 </template>
 
 <script setup>
-// SEO de la page
+// SEO de la page (simplifié)
 useHead({
-  title: 'Le Cabinet | Dentiste Auterive | Dr DELIA, MERIEUX, REGIS',
+  // On ne définit plus que la partie spécifique à la page
+  title: 'Le Cabinet',
+  // On surcharge la description par défaut pour qu'elle soit plus pertinente
   meta: [
     { name: 'description', content: 'Découvrez notre cabinet dentaire à Auterive, nos équipements modernes et les traitements que nous proposons pour la santé de votre sourire.' }
   ]

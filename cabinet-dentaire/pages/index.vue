@@ -141,9 +141,8 @@
 </template>
 
 <script setup>
-// Utilisation de useHead pour le SEO de la page d'accueil
 useHead({
-  title: 'Accueil | Dentiste Auterive | Dr DELIA, MERIEUX, REGIS',
+  title: 'Accueil',
   meta: [
     { name: 'description', content: 'Bienvenue au cabinet dentaire Michelet à Auterive. Prenez rendez-vous avec les docteurs DELIA, MERIEUX et REGIS pour des soins dentaires de qualité, implants, et orthodontie.' }
   ]
