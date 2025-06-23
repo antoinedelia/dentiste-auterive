@@ -6,6 +6,10 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ['~/assets/css/main.css'],
 
+  app: {
+    baseURL: '/dentiste-auterive/'  // Repo name for GitHub Pages
+  },
+
   vite: {
     plugins: [
       tailwindcss(),
