@@ -67,7 +67,7 @@
             <h3 class="text-2xl font-bold text-slate-800 mb-2">Nos Prestations</h3>
             <p class="text-slate-600 mb-6">Découvrez l'ensemble des soins dentaires et esthétiques proposés par notre
               cabinet.</p>
-            <NuxtLink to="/nos-prestations"
+            <NuxtLink to="/a-propos"
                       class="font-bold text-sky-700 hover:underline">Voir les prestations &raquo;</NuxtLink>
           </div>
           <!-- Carte 2: Équipe -->
