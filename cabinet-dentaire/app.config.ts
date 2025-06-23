@@ -3,7 +3,7 @@
 export default defineAppConfig({
   // Informations sur le cabinet
   cabinet: {
-    title: 'Dentiste Auterive | Docteurs DELIA, MERIEUX et REGIS - Cabinet dentaire Michelet',
+    title: 'Dentiste Auterive 31190 Cabinet dentaire des Drs DELIA, MERIEUX et REGIS',
     phone: '05 61 50 89 12',
     email: 'cdm31190@orange.fr',
     rdvUrl: 'https://rdvdentiste.net/auterive/delia-aragon.html',
@@ -12,6 +12,7 @@ export default defineAppConfig({
       zip: '31190',
       city: 'Auterive'
     },
+    ordreNumber: '31 4 022294',
     openingHours: [
       { day: 'Lundi', morning: '9h-12h', afternoon: '14h-18h30' },
       { day: 'Mardi', morning: '9h-12h', afternoon: '14h-18h30' },

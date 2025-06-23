@@ -20,7 +20,7 @@ useHead({
   titleTemplate: (pageTitle) => {
     if (pageTitle) {
       // Si une page a un titre, on l'affiche suivi du nom du cabinet
-      return `${pageTitle} | Cabinet Dentaire Michelet`
+      return `${pageTitle} | ${config.cabinet.title}`
     }
     // Sinon (pour la page d'accueil par exemple), on affiche le titre complet
     return config.cabinet.title
