@@ -15,7 +15,6 @@
           <h3 class="font-bold text-white text-lg mb-2">Liens rapides</h3>
           <ul class="space-y-2 text-sm">
             <li><NuxtLink to="/equipe" class="hover:text-white transition-colors">L'équipe</NuxtLink></li>
-            <li><NuxtLink to="/nos-prestations" class="hover:text-white transition-colors">Nos prestations</NuxtLink></li>
             <li><NuxtLink to="/plan-acces" class="hover:text-white transition-colors">Nous contacter</NuxtLink></li>
           </ul>
         </div>
