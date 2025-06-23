@@ -113,24 +113,24 @@
         <!-- Feature: Salle d'attente -->
         <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
           <!-- Colonne Texte -->
-          <div class="md:w-1/2 md:order-2">
+          <div class="md:w-1/2 md:order-1">
             <h3 class="text-3xl font-bold text-slate-800 mb-4">Un accueil soigné</h3>
             <p class="text-lg text-slate-600">Le cabinet dispose d'une salle d'attente agréable et lumineuse. Notre équipe fait le maximum pour respecter vos horaires de rendez-vous afin de garantir votre confort.</p>
           </div>
            <!-- Colonne Image -->
-           <div class="md:w-1/2 md:order-1">
+           <div class="md:w-1/2 md:order-2">
              <NuxtImg src="https://placehold.co/600x400/f0f9ff/082f49?text=Salle+d'attente" alt="Salle d'attente du cabinet dentaire" class="rounded-lg shadow-xl w-full h-auto"/>
           </div>
         </div>
         <!-- Feature: Parking -->
         <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
           <!-- Colonne Texte -->
-          <div class="md:w-1/2">
+          <div class="md:w-1/2 md:order-2">
             <h3 class="text-3xl font-bold text-slate-800 mb-4">Parking et Accès Facilité</h3>
             <p class="text-lg text-slate-600">Un parking goudronné est à votre disposition pour vous garer facilement. L'absence de marche et la présence de rampes permettent un accès facilité pour les brancards et les personnes à mobilité réduite.</p>
           </div>
            <!-- Colonne Image -->
-           <div class="md:w-1/2">
+           <div class="md:w-1/2 md:order-1">
              <NuxtImg src="https://placehold.co/600x400/e0f2fe/075985?text=Parking+du+cabinet" alt="Parking et entrée du cabinet dentaire" class="rounded-lg shadow-xl w-full h-auto"/>
           </div>
         </div>
