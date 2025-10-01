@@ -7,7 +7,8 @@ export default defineNuxtConfig({
   css: ['~/assets/css/main.css'],
 
   app: {
-    baseURL: '/dentiste-auterive/'  // Repo name for GitHub Pages
+    // baseURL: '/dentiste-auterive/'  // Repo name for GitHub Pages
+    baseURL: '/'
   },
 
   vite: {
