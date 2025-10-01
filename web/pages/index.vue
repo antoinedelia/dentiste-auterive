@@ -34,7 +34,7 @@
                 puis remplir le questionnaire médical</strong> ci-dessous. Il sera à remettre à votre praticien lors de
               votre rendez-vous.
             </p>
-            <a href="/Questionnaire-dentaire.pdf"
+            <a href="/files/Questionnaire-dentaire.pdf"
                download
                class="inline-flex items-center gap-2 bg-sky-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-sky-700 transition-transform hover:scale-105">
               <Icon name="heroicons:arrow-down-tray-20-solid"

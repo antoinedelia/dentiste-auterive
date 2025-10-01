@@ -1,109 +1,171 @@
-name: 'Build and Deploy'
+name: Build & Deploy
 
 on:
-  push:
-    branches:
-    - master
   pull_request:
+    branches: [ "master" ]
+  push:
+    branches: [ "master" ]
+  workflow_dispatch:
+    inputs:
+      force_deploy:
+        description: 'Force a new deployment, ignoring path filters'
+        required: true
+        type: boolean
+        default: false
+
+concurrency:
+  group: "deploy"
+  cancel-in-progress: true
 
 jobs:
-  build-and-deploy:
-    name: 'Build & Deploy'
+  filter:
     runs-on: ubuntu-latest
-    environment: production
+    permissions:
+      contents: read
+    outputs:
+      web: ${{ steps.filter.outputs.web }}
+      terraform: ${{ steps.filter.outputs.terraform }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Calculate changed paths
+        uses: dorny/paths-filter@v3
+        id: filter
+        with:
+          filters: |
+            web:
+              - 'web/**'
+            terraform:
+              - 'terraform/**'
+
+  terraform:
+    needs: filter
+    if: needs.filter.outputs.terraform == 'true' || github.event.inputs.force_deploy == 'true'
+    runs-on: ubuntu-latest
     permissions:
       id-token: write
       contents: read
+    defaults:
+      run:
+        shell: bash
+        working-directory: ./terraform
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
 
-    # Use the Bash shell regardless whether the GitHub Actions runner is ubuntu-latest, macos-latest, or windows-latest
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v3
+        with:
+          cli_config_credentials_token: ${{ secrets.TF_API_TOKEN }}
+
+      - name: Terraform Init
+        run: terraform init
+
+      - name: Terraform Format
+        run: terraform fmt -check
+
+      - name: Terraform Plan
+        run: terraform plan
+
+      - name: Terraform Apply
+        if: github.ref == 'refs/heads/master' && github.event_name == 'push'
+        run: terraform apply -auto-approve
+
+  build:
+    needs: filter
+    if: needs.filter.outputs.web == 'true' || github.event.inputs.force_deploy == 'true'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
     defaults:
       run:
         shell: bash
         working-directory: web
-
     steps:
-    - uses: actions/checkout@v4
-    - uses: dorny/paths-filter@v3
-      id: filter
-      with:
-        filters: |
-          web:
-            - 'web/**'
-          terraform:
-            - 'terraform/**'
+      - name: Checkout code
+        uses: actions/checkout@v4
 
-    # Checkout the repository to the GitHub Actions runner
-    - name: Checkout
-      uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: "npm"
+          cache-dependency-path: web/package-lock.json
 
-    # Install the latest version of Terraform CLI and configure the Terraform CLI configuration file with a Terraform Cloud user API token
-    - name: Setup Terraform
-      if: steps.filter.outputs.terraform == 'true'
-      uses: hashicorp/setup-terraform@v3
-      with:
-        cli_config_credentials_token: ${{ secrets.TF_API_TOKEN }}
+      - name: Install dependencies
+        run: npm ci
 
-    # Initialize a new or existing Terraform working directory by creating initial files, loading any remote state, downloading modules, etc.
-    - name: Terraform Init
-      if: steps.filter.outputs.terraform == 'true'
-      working-directory: ./terraform
-      run: terraform init
+      - name: Generate static site
+        run: npm run generate
 
-    # Checks that all Terraform configuration files adhere to a canonical format
-    - name: Terraform Format
-      if: steps.filter.outputs.terraform == 'true'
-      working-directory: ./terraform
-      run: terraform fmt -check
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-artifact
+          path: web/.output/public
 
-    # Generates an execution plan for Terraform
-    - name: Terraform Plan
-      if: steps.filter.outputs.terraform == 'true'
-      working-directory: ./terraform
-      run: terraform plan
+  deploy-pages:
+    needs: build
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Download build artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: build-artifact
+          path: ./dist
 
-      # On push to master, build or change infrastructure according to Terraform configuration files
-      # Note: It is recommended to set up a required "strict" status check in your repository for "Terraform Cloud". See the documentation on "strict" required status checks for more information: https://help.github.com/en/github/administering-a-repository/types-of-required-status-checks
-    - name: Terraform Apply
-      if: steps.filter.outputs.terraform == 'true' && github.ref == 'refs/heads/master' && github.event_name == 'push'
-      working-directory: ./terraform
-      run: terraform apply -auto-approve
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
 
-    - name: Build
-      if: steps.filter.outputs.web == 'true'
-      uses: actions/setup-node@v4
-      with:
-        node-version: '22'
-        cache: 'npm'
-        cache-dependency-path: '**/package-lock.json'
-      
-    - name: npm ci
-      if: steps.filter.outputs.web == 'true'
-      run: npm ci
-    
-    - name: npm run build
-      if: steps.filter.outputs.web == 'true'
-      run: npm run build --if-present
+      - name: Upload artifact for Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./dist
 
-    - name: Deploy to AWS
-      if: steps.filter.outputs.web == 'true'
-      uses: jakejarvis/s3-sync-action@master
-      with:
-        args: --acl public-read --follow-symlinks --delete
-      env:
-        AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
-        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        AWS_REGION: 'eu-west-1'
-        SOURCE_DIR: 'web/dist/my-app/'
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
 
-    - name: Configure AWS credentials
-      if: steps.filter.outputs.web == 'true'
-      uses: aws-actions/configure-aws-credentials@v1
-      with:
-        role-to-assume: arn:aws:iam::646082475080:role/dentiste-auterive-github-role
-        aws-region: eu-west-1
+  deploy-aws:
+    needs: build
+    if: github.ref == 'refs/heads/master' && (github.event_name == 'push' || github.event.inputs.force_deploy == 'true')
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
+    steps:
+      - name: Download build artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: build-artifact
+          path: ./dist
 
-    - name: Invalidate cache for Cloudfront distribution
-      if: steps.filter.outputs.web == 'true'
-      run: |
-        for id in $(aws cloudfront list-distributions --query "DistributionList.Items[*].{id:Id,origin:Origins.Items[0].Id}[?origin=='${{ secrets.AWS_S3_BUCKET }}'].id" --output text);do aws cloudfront create-invalidation --distribution-id $id --paths "/*";done;
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v5
+        with:
+          role-to-assume: ${{ secrets.AWS_IAM_ROLE }}
+          aws-region: eu-west-1
+          output-env-credentials: true
+
+      - name: get caller identity2
+        run: |
+          aws sts get-caller-identity
+
+      - name: Sync directory to S3
+        run: |
+          aws s3 sync ./dist s3://${{ secrets.AWS_S3_BUCKET }} --delete
+
+      - name: Invalidate CloudFront cache
+        run: |
+          for id in $(aws cloudfront list-distributions --query \
+            "DistributionList.Items[*].{id:Id,origin:Origins.Items[0].Id}[?origin=='${{ secrets.AWS_S3_BUCKET }}'].id" \
+            --output text); do
+            aws cloudfront create-invalidation --distribution-id $id --paths "/*"
+          done
