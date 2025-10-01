@@ -73,7 +73,6 @@ jobs:
 
   build:
     needs: filter
-    if: needs.filter.outputs.web == 'true' || github.event.inputs.force_deploy == 'true'
     runs-on: ubuntu-latest
     permissions:
       contents: read
