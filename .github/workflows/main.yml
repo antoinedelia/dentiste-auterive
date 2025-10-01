@@ -148,16 +148,23 @@ jobs:
           path: ./dist
 
       - name: Configure AWS credentials
-        uses: aws-actions/configure-aws-credentials@v4
+        uses: aws-actions/configure-aws-credentials@v5
         with:
           role-to-assume: ${{ secrets.AWS_IAM_ROLE }}
           aws-region: eu-west-1
+          output-env-credentials: true
+
+      - name: get caller identity2
+        run: |
+          aws sts get-caller-identity
 
       - name: Deploy to AWS S3
         uses: jakejarvis/s3-sync-action@master
         with:
           args: --acl public-read --follow-symlinks --delete
         env:
+          AWS_ACCESS_KEY_ID: ${{ env.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ env.AWS_SECRET_ACCESS_KEY }}
           AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
           AWS_REGION: 'eu-west-1'
           SOURCE_DIR: 'dist'
