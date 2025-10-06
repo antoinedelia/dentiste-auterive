@@ -36,7 +36,7 @@
                             un bridge ou à stabiliser une prothèse amovible.</p>
                     </div>
                     <div class="md:w-1/3">
-                        <NuxtImg src="https://placehold.co/400x300/e0f2fe/0c4a6e?text=Ostéointégration"
+                        <NuxtImg src="osteointegration.webp"
                                  class="rounded-lg shadow-md"
                                  alt="Schéma de l'ostéointégration d'un implant dentaire" />
                     </div>
