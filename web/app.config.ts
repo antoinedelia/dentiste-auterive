@@ -71,6 +71,7 @@ export default defineAppConfig({
           "Formation en implantologie orale et endodontie moderne",
           "Attestation aux gestes d'urgence niveau 2",
         ],
+        doctolibUrl: "https://www.doctolib.fr/dentiste/auterive/pierre-merieux-auterive",
       },
       {
         name: "Dr. Nicolas Régis",
@@ -80,6 +81,7 @@ export default defineAppConfig({
           "Diplôme d'Université en Implantologie Orale et Biomécanique",
           "Formations en aligneurs invisibles (Smilers®) et SAPO IMPLANT",
         ],
+        doctolibUrl: "https://www.doctolib.fr/dentiste/auterive/nicolas-regis",
       },
       {
         name: "Dr. Pierre Delia",
@@ -88,7 +90,7 @@ export default defineAppConfig({
           "Docteur en chirurgie dentaire",
           "Diplômé de la faculté de Toulouse",
         ],
-        doctolibUrl: "https://www.doctolib.fr/interne-en-chirurgie-dentaire/auterive/pierre-delia"
+        doctolibUrl: "https://www.doctolib.fr/dentiste/auterive/pierre-delia",
       },
     ],
     assistants: [

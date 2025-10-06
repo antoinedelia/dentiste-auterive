@@ -19,7 +19,7 @@
                 <section>
                     <div class="flex flex-col md:flex-row items-center gap-12">
                         <div class="md:w-1/2">
-                            <NuxtImg src="https://placehold.co/600x400/e0f2fe/0c4a6e?text=Image+3D+Cone+Beam"
+                            <NuxtImg src="conebeam.png"
                                      class="rounded-lg shadow-md w-full"
                                      alt="Image 3D issue d'un Cone Beam" />
                         </div>
