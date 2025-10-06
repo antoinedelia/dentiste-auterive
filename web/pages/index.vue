@@ -115,8 +115,9 @@
                   chirurgiens-dentistes</strong> pour trois salles de soins et <strong>quatre assistantes
                   dentaires</strong>.</p>
               <p>Aujourd'hui, après plusieurs phases de modernisation, nous bénéficions de <strong>salles de soins
-                  supplémentaires</strong>, d'un <strong>bloc de chirurgie dédié</strong>, et de locaux modernes avec un
+                  supplémentaires, soit 4 au total</strong>, d'un <strong>bloc de chirurgie dédié</strong>, et de locaux modernes avec un
                 matériel toujours à la pointe de la technologie.</p>
+              <p>Le cabinet compte aujourd'hui 4 chirurgiens-dentistes.</p>
             </div>
           </div>
         </div>
@@ -151,6 +152,7 @@
             <p class="text-lg text-slate-600">Un parking goudronné est à votre disposition pour vous garer facilement.
               L'absence de marche et la présence de rampes permettent un accès facilité pour les brancards et les
               personnes à mobilité réduite.</p>
+            <p class="text-lg text-slate-600">Si le parking est complet, vous pouvez vous garer juste à côté sur le parking publique de l'école Michelet. Vous êtes alors à 30 mètres du cabinet.</p>
           </div>
           <!-- Colonne Image -->
           <div class="md:w-1/2 md:order-1">
