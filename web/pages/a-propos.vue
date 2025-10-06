@@ -27,7 +27,7 @@
           </div>
           <div class="md:w-5/12">
             <NuxtImg 
-              src="https://placehold.co/600x400/e0f2fe/0c4a6e?text=Image+du+Cabinet" 
+              src="cabinet.jpg" 
               alt="Présentation du cabinet dentaire" 
               class="rounded-lg shadow-xl w-full h-auto"
             />
