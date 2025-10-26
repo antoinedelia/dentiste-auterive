@@ -6,7 +6,6 @@ export default defineAppConfig({
     title: 'Dentiste Auterive 31190 Cabinet dentaire des Drs DELIA, MERIEUX et REGIS',
     phone: '05 61 50 89 12',
     email: 'cdm31190@orange.fr',
-    rdvUrl: 'https://rdvdentiste.net/auterive/delia-aragon.html',
     address: {
       street: '1 Rue Michelet',
       zip: '31190',
