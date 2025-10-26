@@ -4,7 +4,7 @@
     <!-- En-tête de la page -->
     <div class="bg-slate-50 py-12">
       <div class="container mx-auto px-6 text-center">
-        <h1 class="text-4xl font-bold text-sky-800">Notre équipe</h1>
+        <h1 class="text-4xl font-bold text-sky-800">Prendre RDV avec notre équipe</h1>
         <p class="mt-2 text-lg text-slate-600">Des professionnels passionnés à votre service.</p>
       </div>
     </div>
@@ -41,6 +41,9 @@
               <a v-if="doctor.doctolibUrl" :href="doctor.doctolibUrl" target="_blank" class="inline-block mt-6 bg-sky-600 text-white font-medium py-2 px-5 rounded-lg hover:bg-sky-700 transition-colors">
                 Prendre RDV avec {{ doctor.name }}
               </a>
+              <NuxtLink v-else to="/plan-acces" class="inline-block mt-6 bg-orange-600 text-white font-medium py-2 px-5 rounded-lg hover:bg-orange-700 transition-colors">
+                Prise de RDV uniquement par téléphone ou mail
+              </NuxtLink>
             </div>
           </div>
         </div>

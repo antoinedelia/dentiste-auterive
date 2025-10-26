@@ -47,9 +47,9 @@
         
         <!-- Bouton RDV pour grands écrans (CORRIGÉ: xl:) -->
         <div class="hidden xl:block">
-          <a :href="config.cabinet.rdvUrl" target="_blank" class="bg-sky-600 text-white font-bold py-2 px-5 rounded-lg hover:bg-sky-700 transition-colors">
+          <NuxtLink to="/equipe" class="bg-sky-600 text-white font-bold py-2 px-5 rounded-lg hover:bg-sky-700 transition-colors">
             Prendre RDV
-          </a>
+          </NuxtLink>
         </div>
 
         <!-- Bouton menu mobile (CORRIGÉ: xl:) -->
@@ -78,9 +78,9 @@
           </template>
         </div>
          <div class="pt-4 pb-3 border-t border-slate-200">
-            <a :href="config.cabinet.rdvUrl" target="_blank" class="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-sky-600 hover:bg-sky-700">
+            <NuxtLink to="/equipe" class="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-sky-600 hover:bg-sky-700">
               Prendre RDV
-            </a>
+            </NuxtLink>
          </div>
       </div>
     </nav>
