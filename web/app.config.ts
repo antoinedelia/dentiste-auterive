@@ -84,7 +84,7 @@ export default defineAppConfig({
       },
       {
         name: "Dr. Pierre Delia",
-        img: null,
+        img: "pierre_delia.jpg",
         descriptions: [
           "Docteur en chirurgie dentaire",
           "Diplômé de la faculté de Toulouse",
