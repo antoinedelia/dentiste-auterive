@@ -24,9 +24,12 @@
                   <div>{{ config.cabinet.address.zip }} {{ config.cabinet.address.city }}</div>
                 </div>
               </div>
-              <div class="flex items-center">
-                <Icon name="heroicons:phone-solid" class="h-6 w-6 text-sky-600 mr-4 flex-shrink-0" />
-                <a :href="`tel:${config.cabinet.phone.replace(/\s/g, '')}`" class="hover:text-sky-700">{{ config.cabinet.phone }}</a>
+              <div class="flex items-start">
+                <Icon name="heroicons:phone-solid" class="h-6 w-6 text-sky-600 mr-4 mt-1 flex-shrink-0" />
+                <div>
+                  <a :href="`tel:${config.cabinet.phone.replace(/\s/g, '')}`" class="hover:text-sky-700">{{ config.cabinet.phone }}</a>
+                  <p class="text-sm text-slate-500 mt-1">Disponible 24h/24 et 7j/7 grâce à notre assistant virtuel</p>
+                </div>
               </div>
               <div class="flex items-center">
                 <Icon name="heroicons:envelope-solid" class="h-6 w-6 text-sky-600 mr-4 flex-shrink-0" />

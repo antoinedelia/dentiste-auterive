@@ -61,6 +61,7 @@ export default defineAppConfig({
           "Pratique l'implantologie depuis 2004",
           "Formations avancées en orthodontie invisible, ConeBeam et prothèses sur implant",
         ],
+        doctolibUrl: "https://www.doctolib.fr/dentiste/auterive/christophe-delia"
       },
       {
         name: "Dr. Pierre Mérieux",
@@ -120,17 +121,17 @@ export default defineAppConfig({
     ]
   },
   gallery: [
+    { src: 'cabinet.jpg', alt: "Le cabinet", title: "Le cabinet" },
     { src: 'neige.jpg', alt: "Le cabinet sous la neige", title: "Le cabinet sous la neige" },
     { src: 'arbre.jpg', alt: "Les deux cyprès du cabinet", title: "Les deux cyprès du cabinet" },
     { src: 'entree.jpg', alt: "L'entrée du cabinet", title: "L'accueil du cabinet" },
-    { src: 'bureau.jpg', alt: "Le bureau du Docteur Delia", title: "Bureau du Docteur DELIA" },
-    { src: 'cabinet-delia.jpg', alt: "Salle de soin du Docteur Delia", title: "Salle de soin du Docteur Delia" },
-    { src: 'cabinet-delia-2.jpg', alt: "Salle de soin du Docteur Delia", title: "Salle de soin du Docteur Delia" },
-    { src: 'cabinet-delia-3.jpg', alt: "Salle de soin du Docteur Delia", title: "Salle de soin du Docteur Delia" },
+    { src: 'bureau-delia.jpeg', alt: "Le bureau du Docteur Delia", title: "Bureau du Docteur Delia" },
+    { src: 'bureau-regis.jpg', alt: "Le bureau du Docteur Regis", title: "Bureau du Docteur Regis" },
+    { src: 'cabinet-regis.jpg', alt: "Salle de soin du Docteur Regis", title: "Salle de soin du Docteur Regis" },
     { src: 'salle-soin-delia.jpg', alt: "Salle de soin du Docteur Delia", title: "Salle de soin du Docteur Delia" },
     { src: 'cabinet-merieux.jpg', alt: "Salle de soin du Docteur Merieux", title: "Salle de soin du Docteur Merieux" },
     { src: 'salle-sterilisation.jpg', alt: "Salle de stérilisation", title: "Salle de stérilisation" },
-    { src: 'equipe.jpg', alt: "L'équipe du cabinet", title: "L'équipe du cabinet" },
-    { src: 'delia_masque.jpg', alt: "Nous sommes équipés pour vous recevoir !", title: "Nous sommes équipés pour vous recevoir !" },
+    // { src: 'delia_masque.jpg', alt: "Nous sommes équipés pour vous recevoir !", title: "Nous sommes équipés pour vous recevoir !" },
+    { src: 'dr-delia.jpeg', alt: "Nous sommes équipés pour vous recevoir !", title: "Nous sommes équipés pour vous recevoir !" },
   ]
 })
