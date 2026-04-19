@@ -16,7 +16,7 @@
     "@nuxt/image": "^1.10.0",
     "@nuxt/scripts": "^0.11.8",
     "@tailwindcss/vite": "^4.1.10",
-    "@unhead/vue": "^2.1.12",
+    "@unhead/vue": "^2.1.13",
     "eslint": "^9.29.0",
     "nuxt": "^3.19.2",
     "tailwindcss": "^4.1.10",
