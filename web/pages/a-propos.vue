@@ -24,6 +24,12 @@
                 Les docteurs Delia, Merieux et Regis ainsi que toute leur équipe sont heureux de vous accueillir sur le site de leur cabinet dentaire. Vous y trouverez toutes les informations pratiques, de notre <strong>numéro de téléphone</strong> à notre <strong>localisation</strong>, ainsi qu'un aperçu des techniques de dentisterie moderne que nous mettons à votre service.
               </p>
             </div>
+            <h2 class="text-3xl font-bold text-slate-800 mb-4 mt-8">Votre assistante virtuelle <span class="inline-block bg-sky-600 text-white text-xs font-bold uppercase tracking-wide px-2 py-1 rounded-full align-middle animate-pulse">Nouveau</span></h2>
+            <div class="prose prose-lg max-w-none text-slate-600">
+              <p>
+                Compte tenu d'un grand nombre d'appels téléphoniques, nous sommes dorénavant aidés d'une <strong>secrétaire médicale virtuelle</strong> qui répondra à vos appels <strong>24 heures sur 24 et 7 jours sur 7</strong>. Ne soyez pas surpris, elle est très sympathique, et transmettra à notre équipe toutes vos demandes. Elle pourra également rapidement vous proposer des rendez-vous d'urgence. Nous répondons aussi aux mails toujours à l'adresse&nbsp;: <a href="mailto:cdm31190@orange.fr" class="text-sky-700 hover:underline">cdm31190@orange.fr</a>.
+              </p>
+            </div>
           </div>
           <div class="md:w-5/12">
             <NuxtImg 
@@ -74,7 +80,7 @@
         <div class="flex flex-col md:flex-row items-center gap-12">
            <div class="md:w-5/12">
             <NuxtImg 
-              src="https://placehold.co/600x400/f0f9ff/082f49?text=Sourire+éclatant" 
+              src="sourire-eclatant.webp" 
               alt="Illustration de soins dentaires" 
               class="rounded-lg shadow-xl w-full h-auto"
             />
@@ -109,7 +115,7 @@
           </div>
           <div class="md:w-5/12 md:order-1">
             <NuxtImg 
-              src="https://placehold.co/600x400/e2e8f0/334155?text=Carte+Vitale" 
+              src="carte-vitale.jpeg" 
               alt="Carte vitale" 
               class="rounded-lg shadow-xl w-full h-auto"
             />
@@ -137,7 +143,6 @@ const equipements = [
   { name: 'Radiopanoramique 2D & Scanner 3D', icon: 'heroicons:viewfinder-circle', description: 'Pour un diagnostic précis et un plan de traitement plus efficace.' },
   { name: 'Scanner intra-oral (CFAO)', icon: 'heroicons:camera', description: 'Empreintes optiques rapides et précises, sans inconfort.' },
   { name: 'Anesthésie électronique QuickSleeper™', icon: 'heroicons:beaker', description: 'Une anesthésie plus efficace, rapide et sans douleur.' },
-  { name: 'Lampe de blanchiment Zoom™', icon: 'heroicons:sparkles', description: 'La référence pour éclaircir votre sourire de manière spectaculaire.' },
   { name: 'Aéropolisseur', icon: 'heroicons:paint-brush', description: 'Élimine efficacement les colorations de café, thé ou nicotine.' },
   { name: 'Équipement d\'endodontie moderne', icon: 'heroicons:cog-6-tooth', description: 'Pour des traitements canalaires (dévitalisations) fiables et sécurisés.' },
 ]
