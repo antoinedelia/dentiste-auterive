@@ -46,7 +46,7 @@
           <div class="md:w-1/2">
             <!-- J'utilise NuxtImg pour des performances optimales et un placeholder. -->
             <!-- Remplacez le placeholder par le chemin de votre image une fois ajoutée. -->
-            <NuxtImg src="questionnaire-medical.jpg"
+            <NuxtImg src="/questionnaire-medical.jpg"
                      alt="Illustration d'un formulaire médical"
                      class="rounded-lg shadow-xl w-full h-auto" />
           </div>
